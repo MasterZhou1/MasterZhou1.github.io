@@ -1,6 +1,7 @@
 {%- assign authors = include.authors -%}
 {%- assign has_eq_contrib = false -%}
 {%- assign has_corresponding = false -%}
+{%- assign has_alphabetical = false -%}
 
 {%- for _key in authors -%}
     {%- assign last_char = _key | slice: -1, 1%}
@@ -12,6 +13,10 @@
         {%- assign key = _key | split: "#" | first -%}
         {%- assign mark = '<sup>#</sup>' -%}
         {%- assign has_corresponding = true -%}
+    {%- elsif last_char == "@" -%}
+        {%- assign key = _key | split: "@" | first -%}
+        {%- assign mark = '' -%}
+        {%- assign has_alphabetical = true -%}
     {%- else -%}
         {%- assign key = _key -%}
         {%- assign mark = "" -%}
@@ -41,8 +46,11 @@
 
 {%- endfor -%}
 
-{%- if has_eq_contrib or has_corresponding %}
+{%- if has_eq_contrib or has_corresponding or has_alphabetical %}
 <mark>(
+    {%- if has_alphabetical -%}
+        <i> alphabetical order</i>
+    {%- endif -%}
     {%- if has_eq_contrib -%}
         * <i> equal contribution</i>
     {%- endif -%}
