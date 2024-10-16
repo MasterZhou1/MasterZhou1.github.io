@@ -3,8 +3,8 @@ secondary_name: ""
 navbar_name: "Yufa Zhou"
 
 positions:
-- name: Master Student @ UPenn
-# logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- logo: /assets/images/badges/UPenn_Logo.png  # Logo is optional
+  name: Master Student @ UPenn
   
 # - name: Position 2 without logo
 
