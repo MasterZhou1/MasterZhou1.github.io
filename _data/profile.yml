@@ -37,14 +37,14 @@ portrait_url: /assets/images/photos/portrait.jpg
 
 education:
 - name: University of Pennsylvania
-  # logo: /assets/images/badges/MIT_Social_circle.png
+  logo: /assets/images/badges/UPenn_Logo.png
   position: >- 
     Scientific Computing <br/>
     Master Student
   date: Sep. 2023 - present
 - name: Wuhan University
-  # logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Engineering Mechanics
+  logo: /assets/images/badges/Wuhan_University_Logo.png
+  position: B.E. in Engineering Mechanics
   date: Sep. 2019 - Jul. 2023
 
 # experience:
