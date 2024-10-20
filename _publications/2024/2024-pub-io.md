@@ -12,7 +12,7 @@ abstract: >-
   We establish tight I/O complexity bounds for attention mechanisms in large language models across small and large cache sizes—confirming FlashAttention's optimality in large caches, improving algorithms for small caches, extending analysis to sparse attention, and offering insights for efficient LLM training and inference.
 cover:          /assets/images/covers/io_complexity.jpg
 authors:
-  - Xiaoyu Li
+  - Xiaoyu Li@
   - Yingyu Liang
   - Zhenmei Shi
   - Zhao Song
