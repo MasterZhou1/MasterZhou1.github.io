@@ -14,5 +14,5 @@ authors:
 - Yufa Zhou
 - Xinzhong Wang
 links:
-  Paper: [https://www.cell.com](https://www.sciencedirect.com/science/article/pii/S0263822322012788)
+  Paper: https://www.sciencedirect.com/science/article/pii/S0263822322012788
 ---
