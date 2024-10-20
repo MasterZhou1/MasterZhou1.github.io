@@ -10,7 +10,7 @@ pub:            "NeurIPS 2024 Workshop: Adaptive Foundation Models: Evolving AI 
 
 abstract: >-
   We prove that, under bounded entries, the backward gradient of tensor attention can be computed in almost linear time—overcoming the $O(n^3)$ complexity barrier—and propose efficient methods to enable practical higher-order transformer training with tensor attention architectures.
-cover:          /assets/images/covers/high_order_attention.pdf
+cover:          /assets/images/covers/tat.jpg
 authors:
   - Yingyu Liang@
   - Zhenmei Shi
