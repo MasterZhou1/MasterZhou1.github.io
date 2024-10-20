@@ -1,17 +1,18 @@
 ---
-title:          "Lorem ipsum: Dolor sit amet, consectetur adipiscing elit"
-date:           2023-01-05 00:01:00 +0800
-selected:       true
-pub:            "Nature Communications"
+title:          "Multiscale optimization of additively manufactured graded non-stochastic and stochastic lattice structures"
+date:           2023-02-01 00:01:00 +0800
+selected:       false
+pub:            "Composite Structures"
 pub_date:       "2023"
 abstract: >-
-  Cover image is a photo by Thomas Renaud on Unsplash. The abstract of the publication is meant to be a TLDR (very brief summary with 1~2 sentences) of your paper.
-cover:          /assets/images/covers/cover1.jpg
+  We develop a multiscale optimization framework for graded lattice structures—both non-stochastic and stochastic—by modeling microstructures, optimizing macroscopic relative density, and reconstructing full-scale lattices, demonstrating mechanical advantages over traditional single-scale structures through analysis and experiments.
 authors:
-- Your Name*
-- Robert White*
-- John Doe
-- Charles Green (Stanford)
+- Hui Liu
+- Lianxiong Chen 
+- Yi Jiang
+- Dezhou Zhu
+- Yufa Zhou
+- Xinzhong Wang
 links:
-  Paper: https://www.cell.com
+  Paper: [https://www.cell.com](https://www.sciencedirect.com/science/article/pii/S0263822322012788)
 ---
