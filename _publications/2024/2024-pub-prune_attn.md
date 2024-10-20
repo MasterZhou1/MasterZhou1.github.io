@@ -9,7 +9,7 @@ pub:            "Arxiv"
 pub_date:       "2024"
 
 abstract: >-
-  We introduce a novel LLM weight pruning method that directly optimizes the approximation of the non-linear attention matrix—with theoretical convergence guarantees—effectively reducing computational costs while maintaining model performance, thus enabling efficient deployment on resource-constrained devices.
+  We introduce a novel LLM weight pruning method that directly optimizes for approximating the non-linear attention matrix—with theoretical convergence guarantees—effectively reducing computational costs while maintaining model performance.
 cover:          /assets/images/covers/attn_prune.jpg
 authors:
   - Yingyu Liang@
