@@ -10,7 +10,7 @@ pub:            "NeurIPS 2024 Workshop: Safe Generative AI"
 
 abstract: >-
   We present the first differential privacy (DP) data structure for cross-attention modules—securing sensitive information in key and value matrices across AI applications like retrieval-augmented generation and guided stable diffusion—with theoretical guarantees on privacy and efficiency, robustness to adaptive attacks, and potential to inspire future privacy designs in large generative models.
-# cover:          /assets/images/covers/tat.jpg
+cover:          /assets/images/covers/differential_privacy.png
 authors:
   - Yingyu Liang@
   - Zhenmei Shi
