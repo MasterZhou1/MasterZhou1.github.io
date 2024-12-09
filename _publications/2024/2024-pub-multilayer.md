@@ -20,6 +20,7 @@ authors:
   - Yufa Zhou
 links:
   Paper: https://arxiv.org/abs/2408.13233
+  Poster: /assets/pdfs/MultiLayer_OPT_Poster.pdf
   # Code: https://github.com/luost26/academic-homepage
   # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
