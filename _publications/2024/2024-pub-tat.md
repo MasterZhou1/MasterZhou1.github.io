@@ -18,7 +18,7 @@ authors:
   - Yufa Zhou
 links:
   Paper: https://arxiv.org/abs/2405.16411
-  NeurIPS Workshop Poster: /assets/pdfs/TAT_AFM_Poster.pdf
+  Poster: /assets/pdfs/TAT_AFM_Poster.pdf
   # Code: https://github.com/luost26/academic-homepage
   # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
