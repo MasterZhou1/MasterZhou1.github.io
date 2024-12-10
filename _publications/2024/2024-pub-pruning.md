@@ -9,7 +9,7 @@ pub:            "AAAI 2025"
 pub_date:       "To Appear"
 
 abstract: >-
-  We present a training-free structural pruning method using Newton’s approach and compensation algorithms to efficiently compress decoder-only transformer models, achieving state-of-the-art performance with reduced memory usage and faster generation on GPUs.
+  We present a training-free structural pruning method using Newton’s method and compensation algorithms to efficiently compress decoder-only transformer models, achieving state-of-the-art performance with reduced memory usage and faster generation on GPUs.
 cover:          /assets/images/covers/pruning.jpg
 authors:
   - Xuan Shen
