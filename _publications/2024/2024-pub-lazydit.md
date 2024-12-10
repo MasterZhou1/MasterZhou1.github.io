@@ -23,8 +23,8 @@ authors:
   - Jason Kuen
   - Henghui Ding
   - Zhihao Shu
-  - Wei Niu 
-  – Pu Zhao 
+  - Wei Niu
+  – Pu Zhao
   - Yanzhi Wang 
   - Jiuxiang Gu
   
