@@ -24,7 +24,7 @@ authors:
   - Henghui Ding
   - Zhihao Shu
   - Wei Niu
-  – Pu Zhao
+  - Pu Zhao
   - Yanzhi Wang 
   - Jiuxiang Gu
   
