@@ -29,6 +29,7 @@ authors:
   - Jiuxiang Gu
   
 links:
+  Paper: /assets/pdfs/AAAI_2025_DiT_Lazy_Learning__Camera_Ready_.pdf
   # Paper: https://arxiv.org/abs/2407.14717
   # Poster: /assets/pdfs/DP_crossattn_SafeGenai_Poster.pdf
   # Code: https://github.com/luost26/academic-homepage
