@@ -1,6 +1,6 @@
 ---
 title:          "LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers"
-date:           2025-3-14 00:01:00 +0800
+date:           2024-3-14 00:01:00 +0800
 selected:       false
 pub:            "AAAI"
 # pub_pre:        "Submitted to "
@@ -29,7 +29,7 @@ authors:
   - Jiuxiang Gu
   
 links:
-  Paper: /assets/pdfs/AAAI_2025_DiT_Lazy_Learning__Camera_Ready_.pdf
+  Paper: https://arxiv.org/pdf/2412.12444
   # Paper: https://arxiv.org/abs/2407.14717
   # Poster: /assets/pdfs/DP_crossattn_SafeGenai_Poster.pdf
   # Code: https://github.com/luost26/academic-homepage
