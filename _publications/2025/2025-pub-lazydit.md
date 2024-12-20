@@ -1,12 +1,12 @@
 ---
 title:          "LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers"
-date:           2024-3-14 00:01:00 +0800
+date:           2025-1-1 00:01:00 +0800
 selected:       false
 pub:            "AAAI"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
-pub_date:       "2025 (To Appear)"
+pub_date:       "2025"
 
 abstract: >-
   We present LazyDiT, a framework that accelerates Diffusion Transformers by reusing computations from previous steps and dynamically skipping redundancies, achieving superior performance over existing methods like DDIM across multiple models and devices.
