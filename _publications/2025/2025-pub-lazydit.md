@@ -30,8 +30,6 @@ authors:
   
 links:
   Paper: https://arxiv.org/pdf/2412.12444
-  # Paper: https://arxiv.org/abs/2407.14717
-  # Poster: /assets/pdfs/DP_crossattn_SafeGenai_Poster.pdf
   # Code: https://github.com/luost26/academic-homepage
   # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
