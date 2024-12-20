@@ -1,6 +1,6 @@
 ---
 title:          "Numerical Pruning for Efficient Autoregressive Models"
-date:           2025-1-1 00:01:00 +0800
+date:           2025-1-2 00:01:00 +0800
 selected:       false
 pub:            "AAAI"
 # pub_pre:        "Submitted to "
