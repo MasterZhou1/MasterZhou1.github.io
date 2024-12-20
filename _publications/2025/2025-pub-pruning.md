@@ -1,12 +1,12 @@
 ---
 title:          "Numerical Pruning for Efficient Autoregressive Models"
-date:           2025-3-14 00:01:00 +0800
+date:           2025-1-1 00:01:00 +0800
 selected:       false
 pub:            "AAAI"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
-pub_date:       "2025 (To Appear)"
+pub_date:       "2025"
 
 abstract: >-
   We present a training-free structural pruning method using Newton’s method and compensation algorithms to efficiently compress decoder-only transformer models, achieving state-of-the-art performance with reduced memory usage and faster generation on GPUs.
