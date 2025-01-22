@@ -1,12 +1,12 @@
 ---
 title:          "Looped relu mlps may be all you need as practical programmable computers"
-date:           2024-10-12 00:01:00 +0800
+date:           2025-1-22 00:01:00 +0800
 selected:       true
-pub:            "Arxiv"
+pub:            "AISTATS"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
-pub_date:       "2024"
+pub_date:       "2025"
 
 abstract: >-
   We demonstrate that a looped 23-layer ReLU-MLP can function as a universal programmable computer—revealing that simple neural network modules possess greater expressive power than previously thought and can perform complex tasks without relying on advanced architectures like Transformers.
