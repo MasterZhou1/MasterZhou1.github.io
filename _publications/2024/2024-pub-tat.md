@@ -1,7 +1,7 @@
 ---
 title:          "Tensor attention training: Provably efficient learning of higher-order transformers"
 date:           2024-05-26 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "NeurIPS 2024 Workshop: Adaptive Foundation Models: Evolving AI for Personalized and Efficient Learning"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
