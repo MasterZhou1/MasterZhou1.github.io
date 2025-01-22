@@ -25,18 +25,10 @@ short_bio: >-
   <p>
     I am a second-year master's student at the University of Pennsylvania.
   </p>
-  
-    # , currently working as a research intern under the guidance of 
-    # <a href="https://yingyuliang.github.io/" target="_blank">Yingyu Liang</a> 
-    # and <a href="https://scholar.google.com/citations?user=yDZct7UAAAAJ&hl=en" target="_blank">Zhao Song</a>.
-    
   <p>
     I have a profound interest in AI, encompassing theoretical, empirical, and even philosophical aspects. 
     Currently, my research interests include LLM understanding, LLM acceleration, and safe generative AI.   
   </p>
-  
-    # I am actively seeking research opportunities and a Ph.D. position for Fall 2025. 
-    # Feel free to send me an email!
   
 portrait_url: /assets/images/photos/me.jpg
 # portrait_caption: >-
