@@ -1,7 +1,7 @@
 ---
 title:          "Fine-grained Attention I/O Complexity: Comprehensive Analysis for Backward Passes"
 date:           2024-10-12 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "Arxiv"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
