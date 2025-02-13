@@ -2,7 +2,7 @@
 title:          "Multi-Layer Transformers Gradient Can be Approximated in Almost Linear Time
 "
 date:           2024-08-23 00:01:00 +0800
-selected:       false
+selected:       true
 pub:            "NeurIPS 2024 Workshop: Optimization for Machine Learning"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
