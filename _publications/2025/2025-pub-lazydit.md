@@ -1,7 +1,7 @@
 ---
 title:          "LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers"
 date:           2025-1-2 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "AAAI"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
