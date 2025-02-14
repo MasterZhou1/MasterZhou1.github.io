@@ -61,6 +61,6 @@ education:
 #   date: 2021
 
 
-Academic Services:
-  - Conference Reviewer: ICLR 2025, NAACL 2025.
-  - Journal Reviewer: TKDE.
+academic services:
+  - conference: ICLR 2025, NAACL 2025
+  - journal: TKDE
