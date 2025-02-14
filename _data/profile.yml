@@ -62,5 +62,5 @@ education:
 
 
 academic_services:
-  - conference: ICLR 2025, NAACL 2025
-  - journal: TKDE
+  - conference: ["ICLR 2025", "NAACL 2025"]
+  - journal: ["TKDE"]
