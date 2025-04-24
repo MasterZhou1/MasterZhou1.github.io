@@ -3,7 +3,7 @@ secondary_name: "周宇发"
 navbar_name: "Yufa Zhou"
 
 positions:
-- logo: /assets/images/badges/Duke_University_logo.jpg  # Logo is optional
+- logo: /assets/images/badges/Duke_University_logo.png  # Logo is optional
   name: CS PhD Student @ Duke
   
 # - name: Position 2 without logo
@@ -40,7 +40,7 @@ portrait_url: /assets/images/photos/me.jpg
 
 education:
 - name: Duke University
-  logo: /assets/images/badges/Duke_University_logo.jpg
+  logo: /assets/images/badges/Duke_University_logo.png
   position: Ph.D. in Computer Science
   date: Aug. 2025 – Present
 - name: University of Pennsylvania
