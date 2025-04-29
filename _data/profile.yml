@@ -37,7 +37,6 @@ short_bio: >-
 portrait_url: /assets/images/photos/me.jpg
 portrait_caption: >-
   “The limits of my language mean the limits of my world.” — Wittgenstein
-  # Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
 - name: Duke University
