@@ -30,6 +30,5 @@ authors:
   
 links:
   Paper: https://arxiv.org/abs/2412.12444
-  # Code: https://github.com/luost26/academic-homepage
-  # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
+  Code: https://github.com/shawnricecake/lazydit
 ---
