@@ -1,7 +1,7 @@
 ---
 title:          "Unraveling the Smoothness Properties of Diffusion Models: A Gaussian Mixture Perspective"
 date:           2025-06-26 00:01:00 +0800
-selected:       false
+selected:       true
 pub:            "ICCV"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
