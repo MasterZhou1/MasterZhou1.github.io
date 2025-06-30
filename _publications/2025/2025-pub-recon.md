@@ -1,5 +1,5 @@
 ---
-title:          "Recon: Post-Training LLMs on Economic Reasoning Yields Strategic Generalization"
+title:          "Reasoning Like an Economist: Post-Training on Economic Problems Induces Strategic Generalization in LLMs"
 date:           2025-5-31 00:01:00 +0800
 selected:       false
 pub:            "arXiv"
