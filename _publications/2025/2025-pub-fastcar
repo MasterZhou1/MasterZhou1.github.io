@@ -1,0 +1,34 @@
+---
+title:          "FastCar: Cache Attentive Replay for Fast Auto-Regressive Video Generation on the Edge"
+date:           2025-5-17 00:01:00 +0800
+selected:       false
+pub:            "arXiv"
+# pub_pre:        "Submitted to "
+# pub_post:       "Under review."
+# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+pub_date:       "2025"
+
+abstract: >-
+  FastCar is a novel framework that accelerates auto-regressive (AR) video generation by exploiting temporal redundancy in MLP outputs across frames. We introduce Temporal Attention Score (TAS) to determine when to reuse cached MLP results, avoiding redundant computation and achieving over 2.1× speedup with minimal quality degradation. Additionally, FastCar integrates seamlessly with sparse attention methods to further enhance efficiency and mitigate drifting. An FPGA-based hardware accelerator with Dynamic Resource Scheduling (DRS) is developed to support runtime adaptability and optimized resource utilization. Extensive experiments demonstrate the effectiveness of FastCar in improving generation speed, quality, and power efficiency, enabling scalable edge deployment for high-resolution video synthesis.
+
+cover:          /assets/images/covers/fastcar.png
+authors:
+  - Xuan Shen
+  - Weize Ma
+  - Yufa Zhou
+  - Enhao Tang
+  - Yanyue Xie
+  - Zhengang Li
+  - Yifan Gong
+  - Quanyi Wang
+  - Henghui Ding
+  - Yiwei Wang
+  - Yanzhi Wang
+  - Pu Zhao
+  - Jun Lin
+  - Jiuxiang Gu
+
+links:
+  Paper: https://arxiv.org/abs/2505.14709
+  Code: https://github.com/shawnricecake/fast-car
+---
