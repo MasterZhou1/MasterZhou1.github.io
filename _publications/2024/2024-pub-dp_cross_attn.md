@@ -1,7 +1,7 @@
 ---
 title:          "Differential Privacy of Cross-Attention with Provable Guarantee"
 date:           2024-07-20 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "NeurIPS 2024 Workshop: Safe Generative AI"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
