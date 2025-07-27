@@ -68,5 +68,5 @@ education:
 
 
 academic_services:
-  conference: ["ICLR 2025", "NAACL 2025", "IJCAI 2025", "ACL 2025", "EMNLP 2025"]
+  conference: ["ICLR 2025", "NAACL 2025", "IJCAI 2025", "ACL 2025", "EMNLP 2025", "AAAI 2026"]
   journal: ["TKDE", "TNNLS"]
