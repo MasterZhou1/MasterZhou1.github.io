@@ -37,7 +37,8 @@ short_bio: >-
 portrait_url: /assets/images/photos/me.jpg
 portrait_caption: >-
   Anything that can be verbalized can be solved.
-  # “The limits of my language mean the limits of my world.” — Wittgenstein
+  
+# “The limits of my language mean the limits of my world.” — Wittgenstein
   
 education:
 - name: Duke University
