@@ -26,12 +26,12 @@ short_bio: >-
     I am a 1st year CS PhD student at the Duke University.
   </p>
   <p>
-    I have a profound interest in AI, encompassing theoretical, empirical, and even philosophical aspects.
-    My current research focuses on advancing the understanding of large language models (mechanisms, theory), improving optimization (acceleration, efficiency), and strengthening trustworthiness (safety, privacy, interpretability).
-    I’m also broadly interested in post-training, multi-agent systems, reasoning, domain generalization, and alignment.
+    I am broadly interested in AI, spanning theoretical, empirical, and even philosophical aspects.  
+    My current research focuses on understanding *how* and *why* advanced AI models such as large language models and diffusion models work, and on using this understanding to make them more accurate, efficient, and robust.  
+    I am also interested in related areas where stronger foundations may open up exciting applications, ranging from trustworthy AI to agentic intelligence and AI for science.
   </p>
   <p>
-  I am happy to chat on everything. Feel free to contact.
+    I am happy to chat on everything. Feel free to contact.
   </p>
   
 portrait_url: /assets/images/photos/me.jpg
