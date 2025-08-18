@@ -83,9 +83,9 @@ V = C_s \cdot W,
 \quad C_s = \frac{0.44\, S}{R/I + 0.5\,(T/6.0)^{0.8}}
 $$
 
-Here $S, R, I, T$ are just code-defined factors—seismic intensity, response modification, importance level, and structural period—stitched together with constants and exponents. Plugging in some typical numbers, you might get a coefficient around \(0.06\). Multiply by the building’s weight \(W\) and—voilà—the design shear force.  
+Here $S, R, I, T$ are just code-defined factors—seismic intensity, response modification, importance level, and structural period—stitched together with constants and exponents. Plugging in some typical numbers, you might get a coefficient around $0.06$. Multiply by the building’s weight $W$ and—voilà—the design shear force.  
 
-To a physicist, this looks like an arbitrary patchwork of constants and powers. Yet to an engineer, it is nothing more than $+, -, \times, \div, \sqrt$—simple operators wrapped in messy-looking fractions—that have been **validated through decades of practice**. Sure, refinements exist, and in aerospace or nuclear engineering they matter. But for ordinary civil structures, these empirical rules are more than enough: practical, robust, and trustworthy.  
+To a physicist, this looks like an arbitrary patchwork of constants and powers. Yet to an engineer, it is nothing more than \\(+, -, \times, \div, \sqrt{}\\)—simple operators wrapped in messy-looking fractions—that have been **validated through decades of practice**. Sure, refinements exist, and in aerospace or nuclear engineering they matter. But for ordinary civil structures, these empirical rules are more than enough: practical, robust, and trustworthy.  
 
 Likewise in AI, unification—if it ever comes—will not displace practical “local laws.” Scaling curves, regret bounds, or optimization heuristics endure not because they are elegant, but because they are **usable at the right scale**. They may look crude compared to a hypothetical “grand theory,” yet they remain the workhorses precisely because they solve the problems we actually face.  
 
