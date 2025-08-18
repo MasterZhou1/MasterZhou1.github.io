@@ -33,6 +33,7 @@ plugins:
 #   - vendor/ruby/
 
 # timezone: Asia/Shanghai
+timezone: America/New_York
 
 collections:
   - publications
