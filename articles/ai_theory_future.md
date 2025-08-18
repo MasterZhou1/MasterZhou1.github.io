@@ -64,18 +64,17 @@ Each speaks a completely **different language**; together they form a growing **
 
 ### 5) Counterpoints—and What Would Falsify This
 
-Could we still arrive at a unifying theory of AI? Possibly—but I suspect it would be as difficult as reconciling the four fundamental forces in physics or proving \(N \neq NP\):
+Could we still arrive at a unifying theory of AI? Possibly—but I suspect it would be as difficult as reconciling the four fundamental forces in physics or proving $\mathsf{P} \neq \mathsf{NP}$:
 
 - **A universal invariant** capable of predicting generalization and behavior **across** LLMs, diffusion models, and agents, with **tight error bounds** that hold at practical scales.  
 - **A single law of training dynamics**, robust to optimizer choice, data distribution, and architecture, yielding **mechanistic predictions** rather than just statistical trend lines.  
 - **A unifying evaluation principle** that integrates alignment, reasoning, and efficiency into a provable frontier of trade-offs, while also matching real-world empirical performance.
 
-Absent breakthroughs of this magnitude, **local theories will continue to dominate**—just as in physics, where the dream of unification remains distant, or in complexity theory, where \(P \stackrel{?}{=} NP\) endures as one of the hardest open problems: beautiful, profound, but far beyond immediate reach.  
+Absent breakthroughs of this magnitude, **local theories will continue to dominate**—just as in physics, where the dream of unification remains distant, or in complexity theory, where $\mathsf{P} \stackrel{?}{=} \mathsf{NP}$ endures as one of the hardest open problems: beautiful, profound, but far beyond immediate reach.  
 
-And even if unification someday arrived, **local theories would still remain indispensable**. Civil engineering provides a clear example: for thousands of years, bridges and buildings have been safely designed using simple load-verification formulas that require nothing more than \(+,-,\times, \div, \sqrt{\cdot}\). The existence of continuum mechanics or quantum theory does not invalidate these methods—they are simply the *right theory at the right scale*.  
+And even if unification someday arrived, **local theories would still remain indispensable**. Civil engineering provides a clear example: for thousands of years, bridges and buildings have been safely designed using simple load-verification formulas that require nothing more than $+,-,\times,\div,\sqrt{\cdot}$. The existence of continuum mechanics or quantum theory does not invalidate these methods—they are simply the *right theory at the right scale*.  
 
-Likewise, in AI, unification would not erase the utility of scaling laws, regret bounds, or optimization heuristics. Each local theory, when applied at the right regime, is both sufficient and enduring.  
-
+Likewise, in AI, unification would not erase the utility of scaling laws, regret bounds, or optimization heuristics. Each local theory, when applied at the right regime, is both sufficient and enduring.
 
 ---
 
