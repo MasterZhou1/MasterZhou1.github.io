@@ -4,13 +4,13 @@ title: "AI Theory: Fragmented but Expansive"
 permalink: /articles/ai_theory_future/
 ---
 
-# AI Theory: Fragmented but Expansive
+## AI Theory: Fragmented but Expansive
 
 *TL;DR — Don’t wait for a “theory of everything.” AI will mature the way physics, biology, and engineering did: via a network of local theories that are right at their scale. That’s good news for progress—and for researchers who can bridge ideas across domains.*
 
 ---
 
-## 1) A Personal Prediction
+### 1) A Personal Prediction
 
 I don’t expect a single grand unifying theory of AI any time soon. The field looks set to evolve like post-Newtonian physics or modern biology: **patchworks of locally powerful laws, models, and intuitions** that each explain part of intelligence under specific assumptions and scales.
 
@@ -19,7 +19,7 @@ I don’t expect a single grand unifying theory of AI any time soon. The field l
 
 ---
 
-## 2) Why Unification Is Unlikely (for Now)
+### 2) Why Unification Is Unlikely (for Now)
 
 Three structural forces keep AI theory plural:
 
@@ -36,7 +36,7 @@ Three structural forces keep AI theory plural:
 
 ---
 
-## 3) Analogies That Actually Map
+### 3) Analogies That Actually Map
 
 - **Aerodynamics vs. quantum mechanics**  
   Airplanes were designed with aerodynamics (derived from fluid mechanics), not quantum electrodynamics. When engineers compute lift/drag, they use the **right theory at the right scale**—not the deepest theory available.  
@@ -48,7 +48,7 @@ Three structural forces keep AI theory plural:
 
 ---
 
-## 4) What “Fragmented Progress” Looks Like
+### 4) What “Fragmented Progress” Looks Like
 
 - **Learning theory**: generalization/regret bounds, stability analyses, compression views.  
 - **Optimization**: convergence under non-convexity, saddle dynamics, implicit bias of SGD/Adam.  
@@ -62,7 +62,7 @@ Each speaks a completely **different language**; together they form a growing **
 
 ---
 
-## 5) Counterpoints—and What Would Falsify This
+### 5) Counterpoints—and What Would Falsify This
 
 Could we still arrive at a unifying theory of AI? Possibly—but I suspect it would be as difficult as reconciling the four fundamental forces in physics or proving \(N \neq NP\):
 
@@ -79,7 +79,7 @@ Likewise, in AI, unification would not erase the utility of scaling laws, regret
 
 ---
 
-## 6) Why Fragmentation Is Good (Now)
+### 6) Why Fragmentation Is Good (Now)
 
 - **Faster progress**: local theories let us *ship knowledge* without waiting for grand unification.  
 - **Creative degrees of freedom**: researchers can found micro-fields with their own objects and benchmarks.  
@@ -89,7 +89,7 @@ Likewise, in AI, unification would not erase the utility of scaling laws, regret
 
 ---
 
-## 7) Where This Leaves AGI
+### 7) Where This Leaves AGI
 
 Advances toward AGI will likely **accelerate** this pluralism before they reduce it. As capabilities expand, **new regimes** (long-horizon planning, tool economies, social learning) will demand **new local theories**.
 
@@ -99,7 +99,7 @@ History gives a guide:
 
 ---
 
-## 8) Closing Thought
+### 8) Closing Thought
 
 AI’s scientific richness won’t come from compressing everything into one equation. It will come from **cultivating a network of partial, overlapping theories**—each precise at its scale, each falsifiable in its domain, and each useful for building and understanding intelligent systems.
 
