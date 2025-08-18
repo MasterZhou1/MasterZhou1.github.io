@@ -10,7 +10,7 @@ date: 2025-08-17 00:01:00 +0800
     <div class="p-3 border rounded shadow-sm">
       <div class="h6 mb-1">AI Theory: Fragmented but Expansive</div>
       <div class="small mb-2">
-        I predict AI won't converge to a single unifying theory… (short teaser here).
+        I predict AI won't converge to a single unifying theory, but rather to a rich tapestry of frameworks—each illuminating different facets of learning, reasoning, and intelligence.
       </div>
       <div class="small d-flex">
         <div><em>Personal prediction on AI theory</em></div>
@@ -19,4 +19,3 @@ date: 2025-08-17 00:01:00 +0800
     </div>
   </a>
 </div>
-
