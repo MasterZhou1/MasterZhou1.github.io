@@ -5,7 +5,7 @@ date: 2025-08-18 00:01:00 +0800
 ---
 
 <div class="m-4">
-  <h5>Research Vision</h5>
+<!--   <h5>Research Vision</h5> -->
   <a href="{{ '/articles/ai_theory_future/' | relative_url }}" class="text-reset" style="text-decoration:none;">
     <div class="p-3 border rounded shadow-sm">
       <div class="h6 mb-1">AI Theory: Fragmented but Expansive</div>
