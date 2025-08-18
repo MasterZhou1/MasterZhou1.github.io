@@ -66,19 +66,32 @@ Each speaks a completely **different language**; together they form a growing **
 
 Could we still arrive at a unifying theory of AI? Possibly—but I suspect it would be as difficult as reconciling the four fundamental forces in physics or proving $\mathsf{P} \neq \mathsf{NP}$:
 
-- **A universal invariant** capable of predicting generalization and behavior **across** LLMs, diffusion models, and agents, with **tight error bounds** that hold at practical scales.  
-- **A single law of training dynamics**, robust to optimizer choice, data distribution, and architecture, yielding **mechanistic predictions** rather than just statistical trend lines.  
-- **A unifying evaluation principle** that integrates alignment, reasoning, and efficiency into a provable frontier of trade-offs, while also matching real-world empirical performance.
+- **A universal invariant** that predicts generalization and behavior **across** LLMs, diffusion models, and agents, with **tight error bounds** that hold at practical scales.  
+- **A single law of training dynamics**, insensitive to optimizer choice, data distribution, or architecture, yielding **mechanistic predictions** rather than trend-fitting.  
+- **A unifying evaluation principle** that integrates alignment, reasoning, and efficiency into a provable frontier of trade-offs, while still matching real-world empirical performance.  
 
-Absent breakthroughs of this magnitude, **local theories will continue to dominate**—just as in physics, where the dream of unification remains distant, or in complexity theory, where $\mathsf{P} \stackrel{?}{=} \mathsf{NP}$ endures as one of the hardest open problems: beautiful, profound, but far beyond immediate reach.  
-
-And even if unification someday arrived, **local theories would still remain indispensable**. Civil engineering provides a clear example: for thousands of years, bridges and buildings have been safely designed using simple load-verification formulas that require nothing more than $+,-,\times,\div,\sqrt{\cdot}$. The existence of continuum mechanics or quantum theory does not invalidate these methods—they are simply the *right theory at the right scale*.  
-
-Likewise, in AI, unification would not erase the utility of scaling laws, regret bounds, or optimization heuristics. Each local theory, when applied at the right regime, is both sufficient and enduring.
+Absent breakthroughs of this magnitude, **local theories will continue to dominate**—just as in physics, where unification remains elusive, or in complexity theory, where $\mathsf{P} \stackrel{?}{=} \mathsf{NP}$ persists as one of the deepest open problems: beautiful, profound, but far beyond immediate reach.  
 
 ---
 
-### 6) Why Fragmentation Is Good (Now)
+### 6) Why Local, Messy Formulas Still Matter
+
+And even if a grand unifying theory of AI were discovered, **local, messy formulas would remain indispensable**. Civil engineering makes this obvious. Earthquake design, for instance, often relies not on elegant PDEs but on blunt empirical rules. A typical “base shear–type” formula looks something like:
+
+$$
+V = C_s \cdot W, 
+\quad C_s = \frac{0.44\, S}{R/I + 0.5\,(T/6.0)^{0.8}}
+$$
+
+Here $S, R, I, T$ are just code-defined factors—seismic intensity, response modification, importance level, and structural period—stitched together with constants and exponents. Plugging in some typical numbers, you might get a coefficient around \(0.06\). Multiply by the building’s weight \(W\) and—voilà—the design shear force.  
+
+To a physicist, this looks like an arbitrary patchwork of constants and powers. Yet to an engineer, it is nothing more than $+, -, \times, \div, \sqrt$—simple operators wrapped in messy-looking fractions—that have been **validated through decades of practice**. Sure, refinements exist, and in aerospace or nuclear engineering they matter. But for ordinary civil structures, these empirical rules are more than enough: practical, robust, and trustworthy.  
+
+Likewise in AI, unification—if it ever comes—will not displace practical “local laws.” Scaling curves, regret bounds, or optimization heuristics endure not because they are elegant, but because they are **usable at the right scale**. They may look crude compared to a hypothetical “grand theory,” yet they remain the workhorses precisely because they solve the problems we actually face.  
+
+---
+
+### 7) Why Fragmentation Is Good (Now)
 
 - **Faster progress**: local theories let us *ship knowledge* without waiting for grand unification.  
 - **Creative degrees of freedom**: researchers can found micro-fields with their own objects and benchmarks.  
@@ -88,7 +101,7 @@ Likewise, in AI, unification would not erase the utility of scaling laws, regret
 
 ---
 
-### 7) Where This Leaves AGI
+### 8) Where This Leaves AGI
 
 Advances toward AGI will likely **accelerate** this pluralism before they reduce it. As capabilities expand, **new regimes** (long-horizon planning, tool economies, social learning) will demand **new local theories**.
 
@@ -98,7 +111,7 @@ History gives a guide:
 
 ---
 
-### 8) Closing Thought
+### 9) Closing Thought
 
 AI’s scientific richness won’t come from compressing everything into one equation. It will come from **cultivating a network of partial, overlapping theories**—each precise at its scale, each falsifiable in its domain, and each useful for building and understanding intelligent systems.
 
