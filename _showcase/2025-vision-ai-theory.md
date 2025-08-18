@@ -1,7 +1,7 @@
 ---
 show: true
 width: 12
-date: 2025-08-17 00:01:00 +0800
+date: 2025-08-18 00:01:00 +0800
 ---
 
 <div class="m-4">
@@ -14,7 +14,7 @@ date: 2025-08-17 00:01:00 +0800
       </div>
       <div class="small d-flex">
         <div><em>Personal prediction on AI theory</em></div>
-        <div class="mt-auto ml-auto no-break"><em>2025</em></div>
+        <div class="mt-auto ml-auto no-break"><em>Aug 2025</em></div>
       </div>
     </div>
   </a>
