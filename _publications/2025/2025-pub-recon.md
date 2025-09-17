@@ -1,7 +1,7 @@
 ---
 title:          "Reasoning Like an Economist: Post-Training on Economic Problems Induces Strategic Generalization in LLMs"
 date:           2025-5-31 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "arXiv"
 pub_date:       "2025"
 
