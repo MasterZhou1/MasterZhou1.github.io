@@ -25,13 +25,14 @@ linkedin: yufazhou
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a 1st year CS PhD student at Duke University.
+    I am a 1st year CS PhD student at Duke University, advised by Prof. [Anru Zhang](https://anruzhang.github.io/index.html).
   </p>
   <p>
     <strong>I study the foundations of advanced AI models, focusing on how and why they work.</strong>
   </p>
   <p>
     My current research centers on understanding <em>how</em> and <em>why</em> advanced AI models—such as large language models and diffusion models—work, and on leveraging this understanding to make them more accurate, efficient, and robust.  
+    I am deeply interested in discovering **the first law of intelligence**.
     More broadly, I am interested in AI across theoretical, empirical, and even philosophical dimensions, as well as in areas where stronger foundations may unlock exciting applications, from trustworthy AI to agentic intelligence and AI for science.
   </p>
   <p>
