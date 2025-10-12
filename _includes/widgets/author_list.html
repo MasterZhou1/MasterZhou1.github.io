@@ -19,10 +19,12 @@
 {%- comment %} Pass 2: render names with marks {%- endcomment -%}
 {%- for _key in authors -%}
   {%- assign last_char = _key | slice: -1, 1 -%}
+
+  {%- comment %} SAFE: strip one trailing marker (*, #, @) by length, not math on strings {%- endcomment -%}
+  {%- assign key = _key -%}
   {%- if last_char == "*" or last_char == "#" or last_char == "@" -%}
-    {%- assign key = _key | slice: 0, _key.size | minus: 1 | replace: '', '' -%}
-  {%- else -%}
-    {%- assign key = _key -%}
+    {%- assign key_len = _key | size | minus: 1 -%}
+    {%- assign key = _key | slice: 0, key_len -%}
   {%- endif -%}
 
   {%- assign base_mark = "" -%}
@@ -35,10 +37,7 @@
   {%- assign info = site.data.authors[key] -%}
   {%- assign name = info.name | default: key -%}
 
-  {%- comment %}
-    If alphabetical, add a star to everyone.
-    Avoid double star if already has one.
-  {%- endcomment -%}
+  {%- comment %} If alphabetical, give everyone a star; avoid double-star {%- endcomment -%}
   {%- if has_alphabetical -%}
     {%- if base_mark contains "*" -%}
       {%- assign mark = base_mark -%}
@@ -65,12 +64,10 @@
 {%- if has_eq_contrib or has_corresponding or has_alphabetical -%}
 <mark>(
   {%- if has_alphabetical -%}
-    <i>alphabetical order</i>
-    {%- if has_eq_contrib or has_corresponding -%}, {% endif -%}
+    <i>alphabetical order</i>{%- if has_eq_contrib or has_corresponding -%}, {% endif -%}
   {%- endif -%}
   {%- if has_eq_contrib -%}
-    * <i> equal contribution</i>
-    {%- if has_corresponding -%}, {% endif -%}
+    * <i> equal contribution</i>{%- if has_corresponding -%}, {% endif -%}
   {%- endif -%}
   {%- if has_corresponding -%}
     <sup>#</sup> <i> corresponding author</i>
