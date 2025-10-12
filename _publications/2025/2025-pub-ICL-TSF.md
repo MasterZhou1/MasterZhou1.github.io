@@ -7,7 +7,7 @@ pub_last:       '<span class="badge badge-pill badge-publication badge-success">
 # pub_date:       "2025"
 
 abstract: >-
-  We analyze why Transformers fail in time-series forecasting through in-context learning theory, proving that linear self-attention cannot outperform classical AR($p$) predictors and suffers a strict ($O(1/n)$) excess-risk gap, while chain-of-thought inference compounds errors exponentially—revealing fundamental representational limits of attention and offering principled insights.
+  We analyze why Transformers fail in time-series forecasting through in-context learning theory, proving that, under AR($p$) data, linear self-attention cannot outperform classical linear predictors and suffers a strict $O(1/n)$ excess-risk gap, while chain-of-thought inference compounds errors exponentially—revealing fundamental representational limits of attention and offering principled insights.
 
 cover:          /assets/images/covers/icl-tsf.png
 authors:
