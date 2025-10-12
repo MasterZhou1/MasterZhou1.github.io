@@ -1,62 +1,79 @@
 {%- assign authors = include.authors -%}
+
 {%- assign has_eq_contrib = false -%}
 {%- assign has_corresponding = false -%}
 {%- assign has_alphabetical = false -%}
 
+{%- comment %} Pass 1: detect flags {%- endcomment -%}
 {%- for _key in authors -%}
-    {%- assign last_char = _key | slice: -1, 1%}
-    {%- if last_char == "*" -%}
-        {%- assign key = _key | split: "*" | first -%}
-        {%- assign mark = "*" -%}
-        {%- assign has_eq_contrib = true -%}
-    {%- elsif last_char == "#" -%}
-        {%- assign key = _key | split: "#" | first -%}
-        {%- assign mark = '<sup>#</sup>' -%}
-        {%- assign has_corresponding = true -%}
-    {%- elsif last_char == "@" -%}
-        {%- assign key = _key | split: "@" | first -%}
-        {%- assign mark = '' -%}
-        {%- assign has_alphabetical = true -%}
-    {%- else -%}
-        {%- assign key = _key -%}
-        {%- assign mark = "" -%}
-    {%- endif -%}
-
-    {%- assign info = site.data.authors[key] -%}
-
-    {%- if info['name'] -%}
-        {%- assign name = info['name'] -%}
-    {%- else -%}
-        {%- assign name = key -%}
-    {%- endif -%}
-
-    {%- if info['bold'] == true -%}
-        {%- assign display_name = name | append: mark | prepend: "<strong>" | append: "</strong>" -%}
-    {%- else -%}
-        {%- assign display_name = name | append: mark -%}
-    {%- endif -%}
-    
-    {%- if info['url'] -%}
-        <a class="text-body" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>{%- if forloop.index < authors.size -%}, {% endif -%}
-    {%- else -%}
-        <span class="text-body">
-            {{ display_name }}{%- if forloop.index < authors.size -%}, {% endif -%}
-        </span>
-    {%- endif -%}
-
+  {%- assign last_char = _key | slice: -1, 1 -%}
+  {%- if last_char == "*" -%}
+    {%- assign has_eq_contrib = true -%}
+  {%- elsif last_char == "#" -%}
+    {%- assign has_corresponding = true -%}
+  {%- elsif last_char == "@" -%}
+    {%- assign has_alphabetical = true -%}
+  {%- endif -%}
 {%- endfor -%}
 
-{%- if has_eq_contrib or has_corresponding or has_alphabetical %}
+{%- comment %} Pass 2: render names with marks {%- endcomment -%}
+{%- for _key in authors -%}
+  {%- assign last_char = _key | slice: -1, 1 -%}
+  {%- if last_char == "*" or last_char == "#" or last_char == "@" -%}
+    {%- assign key = _key | slice: 0, _key.size | minus: 1 | replace: '', '' -%}
+  {%- else -%}
+    {%- assign key = _key -%}
+  {%- endif -%}
+
+  {%- assign base_mark = "" -%}
+  {%- if last_char == "*" -%}
+    {%- assign base_mark = "*" -%}
+  {%- elsif last_char == "#" -%}
+    {%- assign base_mark = '<sup>#</sup>' -%}
+  {%- endif -%}
+
+  {%- assign info = site.data.authors[key] -%}
+  {%- assign name = info.name | default: key -%}
+
+  {%- comment %}
+    If alphabetical, add a star to everyone.
+    Avoid double star if already has one.
+  {%- endcomment -%}
+  {%- if has_alphabetical -%}
+    {%- if base_mark contains "*" -%}
+      {%- assign mark = base_mark -%}
+    {%- else -%}
+      {%- assign mark = base_mark | append: "*" -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign mark = base_mark -%}
+  {%- endif -%}
+
+  {%- if info.bold == true -%}
+    {%- assign display_name = "<strong>" | append: name | append: "</strong>" | append: mark -%}
+  {%- else -%}
+    {%- assign display_name = name | append: mark -%}
+  {%- endif -%}
+
+  {%- if info.url -%}
+    <a class="text-body" target="_blank" href="{{ info.url }}">{{ display_name }}</a>{%- if forloop.index < authors.size -%}, {% endif -%}
+  {%- else -%}
+    <span class="text-body">{{ display_name }}{%- if forloop.index < authors.size -%}, {% endif -%}</span>
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if has_eq_contrib or has_corresponding or has_alphabetical -%}
 <mark>(
-    {%- if has_alphabetical -%}
-        <i>alphabetical order</i>
-    {%- endif -%}
-    {%- if has_eq_contrib -%}
-        * <i> equal contribution</i>
-    {%- endif -%}
-    {%- if has_corresponding -%}
-        {%- if has_eq_contrib -%}, {% endif -%}
-        <sup>#</sup> <i> corresponding author</i>
-    {%- endif -%}
+  {%- if has_alphabetical -%}
+    <i>alphabetical order</i>
+    {%- if has_eq_contrib or has_corresponding -%}, {% endif -%}
+  {%- endif -%}
+  {%- if has_eq_contrib -%}
+    * <i> equal contribution</i>
+    {%- if has_corresponding -%}, {% endif -%}
+  {%- endif -%}
+  {%- if has_corresponding -%}
+    <sup>#</sup> <i> corresponding author</i>
+  {%- endif -%}
 )</mark>
 {%- endif -%}
