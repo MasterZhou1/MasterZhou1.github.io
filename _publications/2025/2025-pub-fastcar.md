@@ -9,7 +9,7 @@ pub:            "arXiv"
 pub_date:       "2025"
 
 abstract: >-
-  FastCar is a unified framework that accelerates auto-regressive video generation by leveraging temporal redundancy in MLP outputs through a Temporal Attention Score (TAS), enabling selective reuse of computations, integrating with sparse attention to mitigate drifting, and supporting real-time, high-resolution synthesis on edge devices via a TAS-guided Dynamic Resource Scheduling (DRS) FPGA accelerator, achieving over 2.1× speedup and improved efficiency with minimal quality loss.
+  We propose FastCar, a unified framework that accelerates auto-regressive video generation by exploiting temporal redundancy through a Temporal Attention Score for selective computation reuse, integrating with sparse attention and dynamic scheduling to enable real-time, high-resolution synthesis with over 2.1× speedup and minimal quality loss.
 
 cover:          /assets/images/covers/fastcar.png
 authors:
