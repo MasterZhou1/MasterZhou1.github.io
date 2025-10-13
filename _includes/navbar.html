@@ -11,15 +11,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         {% assign current_tab = page.navbar_title | default: page.nav_active | downcase | strip %}
+        {% assign page_url = page.url | replace: 'index.html','' %}
         {% for item in site.data.navigation.pages %}
           {% assign item_name_lc = item.name | downcase | strip %}
-          {% assign by_name = (item_name_lc == current_tab) %}
-          {% assign by_url  = (item.url != '/' and page.url != '/' and page.url contains item.url) %}
-          {% assign is_home = (item.url == '/' and page.url == '/') %}
+          {% assign item_url = item.url | replace: 'index.html','' %}
       
-          <li class="nav-item">
-            <a class="nav-link{% if by_name or by_url or is_home %} active{% endif %}"
-               {% if by_name or by_url or is_home %}aria-current="page"{% endif %}
+          {% assign by_name = (item_name_lc == current_tab) %}
+          {% assign by_url  = (item_url != '/' and page_url != '/' and (page_url == item_url or page_url contains item_url)) %}
+          {% assign is_home = (item_url == '/' and page_url == '/') %}
+          {% assign active  = by_name or by_url or is_home %}
+      
+          <li class="nav-item{% if active %} active{% endif %}">
+            <a class="nav-link{% if active %} active{% endif %}"
+               {% if active %}aria-current="page"{% endif %}
                href="{{ item.url | relative_url }}">{{ item.name }}</a>
           </li>
         {% endfor %}
