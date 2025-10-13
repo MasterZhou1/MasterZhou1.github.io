@@ -1,0 +1,12 @@
+{% assign mentees = site.data.mentees | default: empty %}
+<section id="mentees">
+  <h6>Mentees</h6>
+  <ul>
+  {% for m in mentees %}
+    <li>
+      {% if m.homepage %}<a href="{{ m.homepage }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}
+      {% if m.role %} — {{ m.role }}{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</section>
