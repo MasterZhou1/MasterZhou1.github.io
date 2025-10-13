@@ -43,8 +43,7 @@ collections:
   - showcase
 
 defaults:
-  - scope:
-      path: "_showcase"
-    values:
-      nav_active: showcase
-
+  - scope: { path: "_showcase" }
+    values: { nav_active: showcase }
+  - scope: { path: "publications" }
+    values: { nav_active: publications }
