@@ -67,4 +67,26 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
+/* 让导航恢复“未激活=灰、激活=明显”的对比；!important 保证覆盖全局 a{} 规则 */
+.navbar .nav-link { 
+  color: rgba(0,0,0,.55) !important;
+  font-weight: 400 !important;
+}
+.navbar .nav-link:hover {
+  color: rgba(0,0,0,.75) !important;
+}
+.navbar .nav-item.active .nav-link,
+.navbar .nav-link.active[aria-current="page"] {
+  color: #0d6efd !important;   /* 可换你的主题色 */
+  font-weight: 600 !important;
+  position: relative;
+}
+.navbar .nav-item.active .nav-link::after,
+.navbar .nav-link.active[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -8px;
+  height: 2px; border-radius: 2px;
+  background: currentColor;
+}
 
