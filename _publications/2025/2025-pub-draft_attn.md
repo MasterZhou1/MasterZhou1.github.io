@@ -6,7 +6,7 @@ pub:            "arXiv"
 pub_date:       "2025"
 
 abstract: >-
-    DraftAttention accelerates video diffusion transformers by using low-resolution pooled attention maps for dynamic sparse attention and hardware-efficient execution, achieving up to 1.75× speedup with minimal quality loss.
+    We propose DraftAttention, a method that accelerates video diffusion transformers by leveraging low-resolution pooled attention maps to enable dynamic sparse attention and hardware-efficient execution, achieving up to 1.75× speedup with minimal quality loss.
 
 cover:          /assets/images/covers/draft_attn.png
 authors:
