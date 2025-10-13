@@ -41,7 +41,3 @@ collections:
   - publications
   - news
   - showcase
-
-defaults:
-  - scope: { path: "_showcase" }
-    values: { nav_active: showcase }
