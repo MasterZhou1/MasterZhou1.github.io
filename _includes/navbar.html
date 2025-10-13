@@ -12,12 +12,13 @@
       <ul class="navbar-nav ml-auto">
         {% assign current_tab = page.navbar_title | default: page.nav_active | downcase | strip %}
         {% assign page_url = page.url | replace: 'index.html','' %}
+      
         {% for item in site.data.navigation.pages %}
           {% assign item_name_lc = item.name | downcase | strip %}
           {% assign item_url = item.url | replace: 'index.html','' %}
       
           {% assign by_name = (item_name_lc == current_tab) %}
-          {% assign by_url  = (item_url != '/' and page_url != '/' and (page_url == item_url or page_url contains item_url)) %}
+          {% assign by_url  = (item_url != '/' and page_url != '/' and (page_url == item_url or page_url contains item_url or item_url contains page_url)) %}
           {% assign is_home = (item_url == '/' and page_url == '/') %}
           {% assign active  = by_name or by_url or is_home %}
       
