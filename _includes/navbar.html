@@ -9,13 +9,14 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
+      
       <ul class="navbar-nav ml-auto">
         {%- assign current_url = page.url | replace: '/index.html','/' -%}
-        {%- assign current_name = page.navbar_title | default: page.nav_active | downcase | strip -%}
+        {%- assign current_name = page.nav_active | downcase | strip -%}
       
         {%- for item in site.data.navigation.pages -%}
           {%- assign name = item.name | downcase | strip -%}
-          {%- assign href = item.url -%} 
+          {%- assign href = item.url -%}
           {%- assign is_active = false -%}
       
           {%- if current_name and current_name != '' -%}
@@ -38,6 +39,7 @@
           </li>
         {%- endfor -%}
       </ul>
+
     </div>
   </div>
 </nav>
