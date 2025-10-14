@@ -17,6 +17,6 @@ authors:
   - Anru R. Zhang
 
 links:
-  # Paper: TODO
+  Paper: https://arxiv.org/abs/2510.09776
   Code: https://github.com/MasterZhou1/ICL-Time-Series
 ---
