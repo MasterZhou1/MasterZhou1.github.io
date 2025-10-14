@@ -42,7 +42,12 @@ $(function () {
 
 // BibTeX Modal Functions
 function showBibTeX(modalId) {
-    const modal = document.getElementById('bibtex-modal-' + modalId);
+    // Handle both desktop and mobile modal IDs
+    const modalIdToFind = modalId.includes('desktop-') || modalId.includes('mobile-') ?
+        'bibtex-modal-' + modalId :
+        'bibtex-modal-desktop-' + modalId;
+
+    const modal = document.getElementById(modalIdToFind);
     if (modal) {
         modal.classList.add('show');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
@@ -69,7 +74,11 @@ function closeBibTeX(modalId) {
 }
 
 function copyBibTeX(modalId) {
-    const contentId = modalId.includes('mobile') ? 'bibtex-content-mobile-' + modalId.replace('mobile-', '') : 'bibtex-content-desktop-' + modalId.replace('desktop-', '');
+    // Extract the actual item ID from modal ID
+    const itemId = modalId.includes('mobile-') ? modalId.replace('mobile-', '') :
+                   modalId.includes('desktop-') ? modalId.replace('desktop-', '') : modalId;
+
+    const contentId = modalId.includes('mobile') ? 'bibtex-content-mobile-' + itemId : 'bibtex-content-desktop-' + itemId;
     const contentElement = document.getElementById(contentId);
 
     if (contentElement) {
@@ -115,7 +124,11 @@ function fallbackCopyTextToClipboard(text, modalId) {
 }
 
 function showCopySuccess(modalId) {
-    const successElementId = modalId.includes('mobile') ? 'copy-success-mobile-' + modalId.replace('mobile-', '') : 'copy-success-desktop-' + modalId.replace('desktop-', '');
+    // Extract the actual item ID from modal ID
+    const itemId = modalId.includes('mobile-') ? modalId.replace('mobile-', '') :
+                   modalId.includes('desktop-') ? modalId.replace('desktop-', '') : modalId;
+
+    const successElementId = modalId.includes('mobile') ? 'copy-success-mobile-' + itemId : 'copy-success-desktop-' + itemId;
     const successElement = document.getElementById(successElementId);
 
     if (successElement) {

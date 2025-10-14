@@ -28,6 +28,17 @@ authors:
   - Yanzhi Wang 
   - Jiuxiang Gu
 
+bib: |
+  @inproceedings{shen2025lazydit,
+  title={Lazydit: Lazy learning for the acceleration of diffusion transformers},
+  author={Shen, Xuan and Song, Zhao and Zhou, Yufa and Chen, Bo and Li, Yanyu and Gong, Yifan and Zhang, Kai and Tan, Hao and Kuen, Jason and Ding, Henghui and others},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={19},
+  pages={20409--20417},
+  year={2025}
+}
+
 links:
   Paper: https://arxiv.org/abs/2412.12444
   Code: https://github.com/shawnricecake/lazydit
