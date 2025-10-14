@@ -11,19 +11,17 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">   
       
       <ul class="navbar-nav ml-auto">
-        {% assign current = page.url | replace: '/index.html','/' %}
-        {% for item in site.data.navigation.pages %}
-          {% assign href = item.url %}
-          {% assign active = (href == '/' and current == '/') or
-                             (href != '/' and current != '/' and current | slice: 0, href.size == href) %}
-          <li class="nav-item">
-            <a href="{{ href | relative_url }}"
-               class="nav-link{% if active %} active{% endif %}"{% if active %} aria-current="page"{% endif %}>
-              {{ item.name }}
-            </a>
-          </li>
-        {% endfor %}
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url contains '/publications/' %} active{% endif %}" href="{{ '/publications/' | relative_url }}"{% if page.url contains '/publications/' %} aria-current="page"{% endif %}>Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url contains '/showcase/' %} active{% endif %}" href="{{ '/showcase/' | relative_url }}"{% if page.url contains '/showcase/' %} aria-current="page"{% endif %}>Showcase</a>
+        </li>
       </ul>
+
 
     </div>
   </div>
