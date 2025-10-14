@@ -15,14 +15,12 @@
       
         {%- for item in site.data.navigation.pages -%}
           {%- assign name = item.name | downcase | strip -%}
-          {%- assign href = item.url -%}  {# 用 raw url 做比较，输出时再 relative_url #}
+          {%- assign href = item.url -%} 
           {%- assign is_active = false -%}
       
-          {# 1) 若页面显式设置了 nav_active / navbar_title，则用名字匹配 #}
           {%- if current_name and current_name != '' -%}
             {%- if name == current_name -%}{%- assign is_active = true -%}{%- endif -%}
           {%- else -%}
-            {# 2) 否则用 URL 前缀匹配；首页用精确匹配 #}
             {%- if href == '/' -%}
               {%- if current_url == '/' -%}{%- assign is_active = true -%}{%- endif -%}
             {%- else -%}
