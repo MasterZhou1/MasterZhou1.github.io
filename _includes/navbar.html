@@ -9,21 +9,22 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      
+            
       <ul class="navbar-nav ml-auto">
-        {%- assign current = page.nav_active | downcase | strip -%}
-        {%- for item in site.data.navigation.pages -%}
-          {%- assign name = item.name | downcase | strip -%}
-          {%- assign href = item.url -%}
-          {%- assign is_active = (name == current) -%}
+        {% assign current = page.nav_active | downcase | strip %}
+        {% for item in site.data.navigation.pages %}
+          {% assign name = item.name | downcase | strip %}
+          {% assign href = item.url %}
+          {% assign is_active = (name == current) %}
+      
           <li class="nav-item{% if is_active %} active{% endif %}">
-            <a class="nav-link{% if is_active %} active{% endif %}"
-               href="{{ href | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>
-              {{ item.name }}
-            </a>
+            <a href="{{ href | relative_url }}"
+               class="nav-link{% if is_active %} active{% endif %}"
+               {% if is_active %}aria-current="page"{% endif %}>{{ item.name }}</a>
           </li>
-        {%- endfor -%}
+        {% endfor %}
       </ul>
+
 
     </div>
   </div>
