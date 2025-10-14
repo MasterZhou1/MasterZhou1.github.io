@@ -62,6 +62,18 @@
                             <i class="fab fa-google-scholar"></i> Google Scholar
                         </a>
                         {% endif %}
+
+                        {% if site.data.profile.openreview %}
+                        {% assign or_value = site.data.profile.openreview %}
+                        {% if or_value contains 'http' %}
+                        {% assign or_url = or_value %}
+                        {% else %}
+                        {% assign or_url = 'https://openreview.net/profile?id=' | append: or_value %}
+                        {% endif %}
+                        <a class="pr-3 no-break" target="_blank" href="{{ or_url }}">
+                            <i class="fas fa-book-open"></i> OpenReview
+                        </a>
+                        {% endif %}
                         
                         {% if site.data.profile.github %}
                         <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
