@@ -13,6 +13,18 @@ authors:
 - Dezhou Zhu
 - Yufa Zhou
 - Xinzhong Wang
+
+bib: |
+  @article{liu2023multiscale,
+  title={Multiscale optimization of additively manufactured graded non-stochastic and stochastic lattice structures},
+  author={Liu, Hui and Chen, Lianxiong and Jiang, Yi and Zhu, Dezhou and Zhou, Yufa and Wang, Xinzhong},
+  journal={Composite Structures},
+  volume={305},
+  pages={116546},
+  year={2023},
+  publisher={Elsevier}
+  }
+
 links:
   Paper: https://www.sciencedirect.com/science/article/pii/S0263822322012788
 ---

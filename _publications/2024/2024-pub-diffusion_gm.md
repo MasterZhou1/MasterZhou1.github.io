@@ -20,12 +20,13 @@ authors:
   - Yufa Zhou
 
 bib: |
-  @article{liang2024unraveling,
-    title={Unraveling the smoothness properties of diffusion models: A gaussian mixture perspective},
-    author={Liang, Yingyu and Shi, Zhenmei and Song, Zhao and Zhou, Yufa},
-    journal={arXiv preprint arXiv:2405.16418},
-    year={2024}
+  @inproceedings{liang2025unraveling,
+    title={Unraveling the Smoothness Properties of Diffusion Models: A Gaussian Mixture Perspective},
+    author={Liang, Yingyu and Sha, Zhizhou and Shi, Zhenmei and Song, Zhao and Wan, Mingda and Zhou, Yufa},
+    booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    year={2025}
   }
+
 
 links:
   Paper: https://arxiv.org/abs/2405.16418

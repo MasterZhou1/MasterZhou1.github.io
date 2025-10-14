@@ -21,6 +21,14 @@ authors:
   - Pu Zhao
   - Jiuxiang Gu
 
+bib: |
+  @article{shen2025draftattention,
+    title={DraftAttention: Fast Video Diffusion via Low-Resolution Attention Guidance},
+    author={Shen, Xuan and Han, Chenxia and Zhou, Yufa and Xie, Yanyue and Gong, Yifan and Wang, Quanyi and Wang, Yiwei and Wang, Yanzhi and Zhao, Pu and Gu, Jiuxiang},
+    journal={arXiv preprint arXiv:2505.14708},
+    year={2025}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2505.14708
   Code: https://github.com/shawnricecake/draft-attention

@@ -28,6 +28,17 @@ authors:
   - Yanzhi Wang
   - Jiuxiang Gu
   
+bib: |
+  @inproceedings{shen2025numerical,
+  title={Numerical pruning for efficient autoregressive models},
+  author={Shen, Xuan and Song, Zhao and Zhou, Yufa and Chen, Bo and Liu, Jing and Zhang, Ruiyi and Rossi, Ryan A and Tan, Hao and Yu, Tong and Chen, Xiang and others},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={19},
+  pages={20418--20426},
+  year={2025}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2412.12441
   # Code: https://github.com/luost26/academic-homepage

@@ -16,6 +16,16 @@ authors:
   - Zhenmei Shi
   - Zhao Song
   - Yufa Zhou
+
+bib: |
+  @inproceedings{liang2024differential,
+  title={Differential Privacy of Cross-Attention with Provable Guarantee},
+  author={Yingyu Liang and Zhenmei Shi and Zhao Song and Yufa Zhou},
+  booktitle={Neurips Safe Generative AI Workshop 2024},
+  year={2024},
+  url={https://openreview.net/forum?id=GttuYQVARs}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2407.14717
   Poster: /assets/pdfs/DP_crossattn_SafeGenai_Poster.pdf

@@ -17,6 +17,16 @@ authors:
   - Zhenmei Shi
   - Zhao Song
   - Yufa Zhou
+
+bib: |
+  @inproceedings{liang2025beyond,
+  title={Beyond Linear Approximations: A Novel Pruning Approach for Attention Matrix},
+  author={Yingyu Liang and Jiangxuan Long and Zhenmei Shi and Zhao Song and Yufa Zhou},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025},
+  url={https://openreview.net/forum?id=sgbI8Pxwie}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2410.11261
   # Code: https://github.com/luost26/academic-homepage

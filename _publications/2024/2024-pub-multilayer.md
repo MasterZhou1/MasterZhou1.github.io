@@ -18,6 +18,16 @@ authors:
   - Zhenmei Shi
   - Zhao Song
   - Yufa Zhou
+
+bib: |
+  @inproceedings{liang2024multilayer,
+  title={Multi-Layer Transformers Gradient Can be Approximated in Almost Linear Time},
+  author={Yingyu Liang and Zhizhou Sha and Zhenmei Shi and Zhao Song and Yufa Zhou},
+  booktitle={OPT 2024: Optimization for Machine Learning},
+  year={2024},
+  url={https://openreview.net/forum?id=1LJIPZ4SvS}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2408.13233
   Poster: /assets/pdfs/MultiLayer_OPT_Poster.pdf

@@ -28,6 +28,14 @@ authors:
   - Jun Lin
   - Jiuxiang Gu
 
+bib: |
+  @article{shen2025fastcar,
+  title={Fastcar: Cache attentive replay for fast auto-regressive video generation on the edge},
+  author={Shen, Xuan and Ma, Weize and Zhou, Yufa and Tang, Enhao and Xie, Yanyue and Li, Zhengang and Gong, Yifan and Wang, Quanyi and Ding, Henghui and Wang, Yiwei and others},
+  journal={arXiv preprint arXiv:2505.14709},
+  year={2025}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2505.14709
   Code: https://github.com/shawnricecake/fast-car

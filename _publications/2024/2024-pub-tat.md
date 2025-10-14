@@ -16,6 +16,15 @@ authors:
   - Zhenmei Shi
   - Zhao Song
   - Yufa Zhou
+
+bib: |
+  @article{liang2024tensor,
+    title={Tensor attention training: Provably efficient learning of higher-order transformers},
+    author={Liang, Yingyu and Shi, Zhenmei and Song, Zhao and Zhou, Yufa},
+    journal={arXiv preprint arXiv:2405.16411},
+    year={2024}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2405.16411
   Poster: /assets/pdfs/TAT_AFM_Poster.pdf

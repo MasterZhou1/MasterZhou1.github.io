@@ -18,6 +18,14 @@ authors:
   - Shuyan Zhou
   - Anru R. Zhang
 
+bib: |
+  @article{zhou2025geometry,
+  title={The Geometry of Reasoning: Flowing Logics in Representation Space},
+  author={Zhou, Yufa and Wang, Yixiao and Yin, Xunjian and Zhou, Shuyan and Zhang, Anru R.},
+  journal={arXiv preprint arXiv:2510.09782},
+  year={2025}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2510.09782
   Code: https://github.com/MasterZhoul/Reasoning-Flow

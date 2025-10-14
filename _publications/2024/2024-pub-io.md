@@ -17,6 +17,15 @@ authors:
   - Zhenmei Shi
   - Zhao Song
   - Yufa Zhou
+
+bib: |
+  @article{li2024fine,
+  title={Fine-grained attention i/o complexity: Comprehensive analysis for backward passes},
+  author={Li, Xiaoyu and Liang, Yingyu and Shi, Zhenmei and Song, Zhao and Zhou, Yufa},
+  journal={arXiv preprint arXiv:2410.09397},
+  year={2024}
+  }
+
 links:
   Paper: https://arxiv.org/abs/2410.09397
   # Code: https://github.com/luost26/academic-homepage
