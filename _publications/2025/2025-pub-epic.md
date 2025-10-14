@@ -26,4 +26,5 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2510.00515
   Code: https://github.com/ZichenWen1/EPIC
+  Page: https://zichenwen1.github.io/EPIC/
 ---
