@@ -47,3 +47,14 @@ collections:
   showcase:
     output: true
     permalink: /showcase/:path/
+
+
+defaults:
+  - scope:
+      path: "_showcase"
+    values:
+      nav_active: showcase
+  - scope:
+      path: "articles"    
+    values:
+      nav_active: showcase
