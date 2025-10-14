@@ -69,6 +69,5 @@ div.lazy {
 
 
 
-.navbar .nav-link { color: rgba(0,0,0,.55) !important; font-weight: 400 !important; }
-.navbar .nav-item.active .nav-link,
-.navbar .nav-link.active[aria-current="page"] { color: rgba(0,0,0,.9) !important; font-weight: 600 !important; }
+.navbar .nav-link { font-weight: 400; }
+.navbar .nav-link.active { font-weight: 600; }
