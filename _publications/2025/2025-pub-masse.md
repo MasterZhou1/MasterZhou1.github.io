@@ -18,7 +18,7 @@ authors:
 bib: |
   @article{liang2025masse,
   title   = {Automating Structural Engineering Workflows with Large Language Model Agents},
-  author  = {Haoran Liang and Yufa Zhou and Mohammad Talebi-Kalaeh and Qipei Mei},
+  author  = {Haoran Liang and Yufa Zhou and Mohammad Talebi Kalaeh and Qipei Mei},
   journal = {arXiv preprint arXiv:2510.11004},
   year    = {2025}
   }
