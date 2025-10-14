@@ -45,7 +45,7 @@
           {% endif %}
           {% endfor %}
           {% if item.bib %}
-          <button class="btn btn-sm btn-outline-secondary ml-2" onclick="showBibTeX('desktop-{{ item.id }}')">[BibTeX]</button>
+          <a href="javascript:void(0)" class="ml-1" onclick="showBibTeX('desktop-{{ item.id }}')">[BibTeX]</a>
           {% endif %}
         </p>
       </div>
@@ -91,7 +91,7 @@
           {% endif %}
           {% endfor %}
           {% if item.bib %}
-          <button class="btn btn-sm btn-outline-secondary ml-2" onclick="showBibTeX('mobile-{{ item.id }}')">[BibTeX]</button>
+          <a href="javascript:void(0)" class="ml-1" onclick="showBibTeX('mobile-{{ item.id }}')">[BibTeX]</a>
           {% endif %}
         </p>
       </div>

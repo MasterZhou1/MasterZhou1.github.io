@@ -37,7 +37,7 @@ bib: |
   number={19},
   pages={20409--20417},
   year={2025}
-}
+  }
 
 links:
   Paper: https://arxiv.org/abs/2412.12444
