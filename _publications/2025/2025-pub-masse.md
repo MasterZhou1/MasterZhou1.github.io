@@ -17,6 +17,6 @@ authors:
   - Qipei Mei
 
 links:
-  # Paper: https://arxiv.org/abs/2510.XXXXX
+  Paper: https://arxiv.org/abs/2510.11004
   Code: https://github.com/DelosLiang/masse
 ---
