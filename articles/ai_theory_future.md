@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "AI Theory: Fragmented but Expansive"
-permalink: /articles/ai_theory_future/
+permalink: /showcase/ai_theory_future/
 ---
 
 ## AI Theory: Fragmented but Expansive
