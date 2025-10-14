@@ -15,25 +15,37 @@
     <a class="nav-link" href="{{ '/' | relative_url }}" data-prefix="/">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ '/publications/' | relative_url }}" data-prefix="/publications/">Publications</a>
+    <a class="nav-link" href="{{ '/publications.html' | relative_url }}" data-prefix="/publications">Publications</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ '/showcase/' | relative_url }}" data-prefix="/showcase/,/articles/">Showcase</a>
+    <a class="nav-link" href="{{ '/showcase.html' | relative_url }}" data-prefix="/showcase,/articles">Showcase</a>
   </li>
 </ul>
 
 <script>
 (function () {
-  var path = location.pathname.replace(/\/index\.html$/,'/');
+  var path = location.pathname.replace(/\/index\.html$/,'/').toLowerCase();
+
   var best = null, bestLen = -1;
   document.querySelectorAll('#topnav .nav-link').forEach(function(a){
-    var p = a.getAttribute('data-prefix');
-    var ok = (p === '/' && path === '/') || (p !== '/' && path.indexOf(p) === 0);
-    if (ok && p.length > bestLen) { best = a; bestLen = p.length; }
+    var raw = (a.getAttribute('data-prefix') || '').toLowerCase();
+    raw.split(',').forEach(function(p){
+      p = p.trim();
+      if (!p) return;
+
+      var ok = (p === '/' && path === '/') ||
+               (p !== '/' && (path === p || path.indexOf(p + '/') === 0));
+      if (ok && p.length > bestLen) { best = a; bestLen = p.length; }
+    });
   });
-  if (best) { best.classList.add('active'); best.setAttribute('aria-current','page'); }
+
+  if (best) {
+    best.classList.add('active');
+    best.setAttribute('aria-current','page');
+  }
 })();
 </script>
+
 
     </div>
   </div>
