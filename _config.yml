@@ -38,25 +38,6 @@ plugins:
 timezone: America/New_York
 
 collections:
-  publications:
-    output: true
-    permalink: /publications/:path/
-  news:
-    output: true
-    permalink: /news/:path/
-  showcase:
-    output: true
-    permalink: /showcase/:path/
-
-
-defaults:
-  - scope:
-      path: "_showcase"
-    values:
-      nav_active: showcase
-  - scope:
-      path: "articles"
-      type: "pages"
-    values:
-      nav_active: showcase
-      permalink: /showcase/:basename/
+  - publications
+  - news
+  - showcase
