@@ -27,7 +27,7 @@ authors:
   - Pu Zhao
   - Yanzhi Wang 
   - Jiuxiang Gu
-  
+
 links:
   Paper: https://arxiv.org/abs/2412.12444
   Code: https://github.com/shawnricecake/lazydit

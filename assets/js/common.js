@@ -39,3 +39,111 @@ $(function () {
         $grid.masonry('layout');
     });
 })
+
+// BibTeX Modal Functions
+function showBibTeX(modalId) {
+    const modal = document.getElementById('bibtex-modal-' + modalId);
+    if (modal) {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+}
+
+function closeBibTeX(modalId) {
+    // Close both desktop and mobile modals for the same item
+    const desktopModal = document.getElementById('bibtex-modal-desktop-' + modalId);
+    const mobileModal = document.getElementById('bibtex-modal-mobile-' + modalId);
+
+    if (desktopModal) {
+        desktopModal.classList.remove('show');
+    }
+    if (mobileModal) {
+        mobileModal.classList.remove('show');
+    }
+
+    document.body.style.overflow = 'auto'; // Restore scrolling
+
+    // Hide success messages
+    const successElements = document.querySelectorAll('[id^="copy-success-"][id$="' + modalId + '"]');
+    successElements.forEach(el => el.style.display = 'none');
+}
+
+function copyBibTeX(modalId) {
+    const contentId = modalId.includes('mobile') ? 'bibtex-content-mobile-' + modalId.replace('mobile-', '') : 'bibtex-content-desktop-' + modalId.replace('desktop-', '');
+    const contentElement = document.getElementById(contentId);
+
+    if (contentElement) {
+        const bibText = contentElement.textContent.trim();
+
+        // Use modern clipboard API if available, fallback to textarea method
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(bibText).then(() => {
+                showCopySuccess(modalId);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                fallbackCopyTextToClipboard(bibText, modalId);
+            });
+        } else {
+            fallbackCopyTextToClipboard(bibText, modalId);
+        }
+    }
+}
+
+function fallbackCopyTextToClipboard(text, modalId) {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+    textArea.style.opacity = "0";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showCopySuccess(modalId);
+        } else {
+            console.error('Fallback: Unable to copy');
+        }
+    } catch (err) {
+        console.error('Fallback: Unable to copy', err);
+    }
+
+    document.body.removeChild(textArea);
+}
+
+function showCopySuccess(modalId) {
+    const successElementId = modalId.includes('mobile') ? 'copy-success-mobile-' + modalId.replace('mobile-', '') : 'copy-success-desktop-' + modalId.replace('desktop-', '');
+    const successElement = document.getElementById(successElementId);
+
+    if (successElement) {
+        successElement.style.display = 'inline';
+        setTimeout(() => {
+            successElement.style.display = 'none';
+        }, 2000);
+    }
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modals = document.querySelectorAll('.bibtex-modal.show');
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            const modalId = modal.id.replace('bibtex-modal-', '').replace('desktop-', '').replace('mobile-', '');
+            closeBibTeX(modalId);
+        }
+    });
+}
+
+// Close modal on Escape key press
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const modals = document.querySelectorAll('.bibtex-modal.show');
+        modals.forEach(modal => {
+            const modalId = modal.id.replace('bibtex-modal-', '').replace('desktop-', '').replace('mobile-', '');
+            closeBibTeX(modalId);
+        });
+    }
+});

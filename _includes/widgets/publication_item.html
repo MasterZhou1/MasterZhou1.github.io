@@ -44,7 +44,29 @@
           <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
           {% endif %}
           {% endfor %}
+          {% if item.bib %}
+          <button class="btn btn-sm btn-outline-secondary ml-2" onclick="showBibTeX('desktop-{{ item.id }}')">[BibTeX]</button>
+          {% endif %}
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BibTeX Modal (Desktop) -->
+<div id="bibtex-modal-desktop-{{ item.id }}" class="bibtex-modal">
+  <div class="bibtex-modal-content">
+    <span class="bibtex-close" onclick="closeBibTeX('{{ item.id }}')">&times;</span>
+    <div class="bibtex-header">
+      <h5>BibTeX Citation</h5>
+    </div>
+    <div class="bibtex-body">
+      <div class="bibtex-content" id="bibtex-content-desktop-{{ item.id }}">
+        {{ item.bib }}
+      </div>
+      <div style="margin-top: 15px;">
+        <button class="copy-bibtex-btn" onclick="copyBibTeX('desktop-{{ item.id }}')">Copy BibTeX</button>
+        <span id="copy-success-desktop-{{ item.id }}" class="copy-success" style="display: none;">Copied!</span>
       </div>
     </div>
   </div>
@@ -68,7 +90,29 @@
           <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
           {% endif %}
           {% endfor %}
+          {% if item.bib %}
+          <button class="btn btn-sm btn-outline-secondary ml-2" onclick="showBibTeX('mobile-{{ item.id }}')">[BibTeX]</button>
+          {% endif %}
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BibTeX Modal (Mobile) -->
+<div id="bibtex-modal-mobile-{{ item.id }}" class="bibtex-modal">
+  <div class="bibtex-modal-content">
+    <span class="bibtex-close" onclick="closeBibTeX('{{ item.id }}')">&times;</span>
+    <div class="bibtex-header">
+      <h5>BibTeX Citation</h5>
+    </div>
+    <div class="bibtex-body">
+      <div class="bibtex-content" id="bibtex-content-mobile-{{ item.id }}">
+        {{ item.bib }}
+      </div>
+      <div style="margin-top: 15px;">
+        <button class="copy-bibtex-btn" onclick="copyBibTeX('mobile-{{ item.id }}')">Copy BibTeX</button>
+        <span id="copy-success-mobile-{{ item.id }}" class="copy-success" style="display: none;">Copied!</span>
       </div>
     </div>
   </div>

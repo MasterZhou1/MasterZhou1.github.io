@@ -16,6 +16,17 @@ authors:
   - Zhao Song
   - Xin Yang
   - Yufa Zhou
+  
+bib: |
+  @inproceedings{
+gao2024differentially,
+title={Differentially Private Attention Computation},
+author={Yeqi Gao and Zhao Song and Xin Yang and Yufa Zhou},
+booktitle={Neurips Safe Generative AI Workshop 2024},
+year={2024},
+url={https://openreview.net/forum?id=dj70ulvXDo}
+}
+
 links:
   Paper: https://arxiv.org/abs/2305.04701
   # Code: https://github.com/luost26/academic-homepage
