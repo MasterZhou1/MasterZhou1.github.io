@@ -11,26 +11,11 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       
       <ul class="navbar-nav ml-auto">
-        {%- assign current_url = page.url | replace: '/index.html','/' -%}
-        {%- assign current_name = page.nav_active | downcase | strip -%}
-      
+        {%- assign current = page.nav_active | downcase | strip -%}
         {%- for item in site.data.navigation.pages -%}
           {%- assign name = item.name | downcase | strip -%}
           {%- assign href = item.url -%}
-          {%- assign is_active = false -%}
-      
-          {%- if current_name and current_name != '' -%}
-            {%- if name == current_name -%}{%- assign is_active = true -%}{%- endif -%}
-          {%- else -%}
-            {%- if href == '/' -%}
-              {%- if current_url == '/' -%}{%- assign is_active = true -%}{%- endif -%}
-            {%- else -%}
-              {%- if current_url != '/' and current_url | slice: 0, href.size == href -%}
-                {%- assign is_active = true -%}
-              {%- endif -%}
-            {%- endif -%}
-          {%- endif -%}
-      
+          {%- assign is_active = (name == current) -%}
           <li class="nav-item{% if is_active %} active{% endif %}">
             <a class="nav-link{% if is_active %} active{% endif %}"
                href="{{ href | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>
