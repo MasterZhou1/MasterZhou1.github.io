@@ -55,6 +55,7 @@ defaults:
     values:
       nav_active: showcase
   - scope:
-      path: "articles"    
+      path: "articles"
     values:
       nav_active: showcase
+      permalink: /showcase/:basename/
