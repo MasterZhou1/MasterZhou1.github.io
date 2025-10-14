@@ -62,12 +62,18 @@
     </div>
     <div class="bibtex-body">
       <div class="bibtex-content" id="bibtex-content-desktop-{{ item.id }}">
-        {{- item.bib | strip 
-          | replace: '\n        ', '\n' 
-          | replace: '\n      ', '\n' 
-          | replace: '\n    ', '\n' 
-          | replace: '\n  ', '\n' 
-          | replace: '\n\n', '\n' -}}
+        {%- assign __bib_lines = item.bib | strip | split: "\n" -%}
+        {%- for __line in __bib_lines -%}
+          {%- assign __t = __line | strip -%}
+          {%- if forloop.first or __t == '}' -%}
+{{- __t -}}
+          {%- else -%}
+{{- '  ' -}}{{- __t -}}
+          {%- endif -%}
+          {%- unless forloop.last -%}
+
+          {%- endunless -%}
+        {%- endfor -%}
       </div>
       <div style="margin-top: 15px;">
         <button class="copy-bibtex-btn" onclick="copyBibTeX('desktop-{{ item.id }}')">Copy BibTeX</button>
@@ -113,12 +119,18 @@
     </div>
     <div class="bibtex-body">
       <div class="bibtex-content" id="bibtex-content-mobile-{{ item.id }}">
-        {{- item.bib | strip 
-          | replace: '\n        ', '\n' 
-          | replace: '\n      ', '\n' 
-          | replace: '\n    ', '\n' 
-          | replace: '\n  ', '\n' 
-          | replace: '\n\n', '\n' -}}
+        {%- assign __bib_lines_m = item.bib | strip | split: "\n" -%}
+        {%- for __line in __bib_lines_m -%}
+          {%- assign __t = __line | strip -%}
+          {%- if forloop.first or __t == '}' -%}
+{{- __t -}}
+          {%- else -%}
+{{- '  ' -}}{{- __t -}}
+          {%- endif -%}
+          {%- unless forloop.last -%}
+
+          {%- endunless -%}
+        {%- endfor -%}
       </div>
       <div style="margin-top: 15px;">
         <button class="copy-bibtex-btn" onclick="copyBibTeX('mobile-{{ item.id }}')">Copy BibTeX</button>
