@@ -24,4 +24,5 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2506.00577
   Code: https://github.com/MasterZhou1/Recon
+  Dataset: https://huggingface.co/datasets/MasterZhou/Recon
 ---
