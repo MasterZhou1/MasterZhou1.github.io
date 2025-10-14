@@ -19,7 +19,7 @@ authors:
   - Anru R. Zhang
 
 links:
-  # Paper: TODO
+  Paper: https://arxiv.org/abs/2510.09782
   Code: https://github.com/MasterZhoul/Reasoning-Flow
   Dataset: https://huggingface.co/datasets/MasterZhou/Reasoning-Flow
 ---
