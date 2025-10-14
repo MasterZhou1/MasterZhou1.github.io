@@ -62,7 +62,7 @@
     </div>
     <div class="bibtex-body">
       <div class="bibtex-content" id="bibtex-content-desktop-{{ item.id }}">
-        {{ item.bib }}
+        {{ item.bib | strip | replace: '  ', '' | replace: '\n\n', '\n' | replace: '\n ', '\n' }}
       </div>
       <div style="margin-top: 15px;">
         <button class="copy-bibtex-btn" onclick="copyBibTeX('desktop-{{ item.id }}')">Copy BibTeX</button>
@@ -108,7 +108,7 @@
     </div>
     <div class="bibtex-body">
       <div class="bibtex-content" id="bibtex-content-mobile-{{ item.id }}">
-        {{ item.bib }}
+        {{ item.bib | strip | replace: '  ', '' | replace: '\n\n', '\n' | replace: '\n ', '\n' }}
       </div>
       <div style="margin-top: 15px;">
         <button class="copy-bibtex-btn" onclick="copyBibTeX('mobile-{{ item.id }}')">Copy BibTeX</button>

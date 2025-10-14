@@ -82,18 +82,40 @@ function copyBibTeX(modalId) {
     const contentElement = document.getElementById(contentId);
 
     if (contentElement) {
-        const bibText = contentElement.textContent.trim();
+        // Get the raw bib data from the Jekyll variable, not the formatted display
+        const allElements = document.querySelectorAll('[id^="bibtex-content-"]');
+        let rawBibText = '';
+
+        // Find the corresponding raw bib data
+        for (let el of allElements) {
+            if (el.id.includes(itemId) && el.textContent.includes('@')) {
+                rawBibText = el.textContent.trim();
+                break;
+            }
+        }
+
+        // If not found, fall back to the displayed text but clean it up
+        if (!rawBibText) {
+            rawBibText = contentElement.textContent.trim();
+        }
+
+        // Clean up the text for copying (preserve the original BibTeX structure but normalize whitespace)
+        rawBibText = rawBibText
+            .replace(/[ \t]+/g, ' ')  // Replace multiple spaces/tabs with single space
+            .replace(/\n\s+/g, '\n')  // Remove spaces after newlines
+            .replace(/\n{3,}/g, '\n\n')  // Replace multiple newlines with double newline
+            .trim();
 
         // Use modern clipboard API if available, fallback to textarea method
         if (navigator.clipboard && window.isSecureContext) {
-            navigator.clipboard.writeText(bibText).then(() => {
+            navigator.clipboard.writeText(rawBibText).then(() => {
                 showCopySuccess(modalId);
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
-                fallbackCopyTextToClipboard(bibText, modalId);
+                fallbackCopyTextToClipboard(rawBibText, modalId);
             });
         } else {
-            fallbackCopyTextToClipboard(bibText, modalId);
+            fallbackCopyTextToClipboard(rawBibText, modalId);
         }
     }
 }

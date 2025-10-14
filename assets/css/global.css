@@ -133,11 +133,13 @@ div.lazy {
     border: 1px solid #dee2e6;
     border-radius: 4px;
     padding: 15px;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    white-space: pre-wrap;
+    font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+    font-size: 13px;
+    line-height: 1.2;
+    white-space: pre;
     word-wrap: break-word;
     max-height: 300px;
+    overflow-x: auto;
     overflow-y: auto;
 }
 

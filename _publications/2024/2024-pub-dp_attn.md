@@ -16,7 +16,7 @@ authors:
   - Zhao Song
   - Xin Yang
   - Yufa Zhou
-  
+
 bib: |
   @inproceedings{gao2024differentially,
     title={Differentially Private Attention Computation},

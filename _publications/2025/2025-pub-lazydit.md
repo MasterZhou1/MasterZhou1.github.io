@@ -25,7 +25,7 @@ authors:
   - Zhihao Shu
   - Wei Niu
   - Pu Zhao
-  - Yanzhi Wang 
+  - Yanzhi Wang
   - Jiuxiang Gu
 
 bib: |
