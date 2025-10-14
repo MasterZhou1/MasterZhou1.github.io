@@ -15,42 +15,34 @@
     <a class="nav-link" href="{{ '/' | relative_url }}" data-prefix="/">Home</a>
   </li>
   <li class="nav-item">
-    <!-- Publications：用 '/publications'（无尾斜杠），兼容 .html 和目录路由 -->
-    <a class="nav-link" href="{{ '/publications.html' | relative_url }}" data-prefix="/publications">Publications</a>
+    <a class="nav-link" href="{{ '/publications/' | relative_url }}" data-prefix="/publications">Publications</a>
   </li>
   <li class="nav-item">
-    <!-- Showcase：既匹配 /showcase 又匹配 /articles（你的博文在这里） -->
-    <a class="nav-link" href="{{ '/showcase.html' | relative_url }}" data-prefix="/showcase,/articles">Showcase</a>
+    <!-- Showcase 同时把 /showcase 和 /articles 视为同一栏目 -->
+    <a class="nav-link" href="{{ '/showcase/' | relative_url }}" data-prefix="/showcase,/articles">Showcase</a>
   </li>
 </ul>
 
 <script>
 (function () {
-  // 把 /index.html -> / ，把 *.html -> 去掉 .html（例如 /publications.html -> /publications）
+  // 规范：/index.html -> /；*.html -> 去掉扩展名（兼容直接访问 .html）
   var path = location.pathname.toLowerCase()
               .replace(/\/index\.html$/, '/')
               .replace(/\.html$/, '');
 
   var best = null, bestLen = -1;
-
   document.querySelectorAll('#topnav .nav-link').forEach(function(a){
     var raw = (a.getAttribute('data-prefix') || '').toLowerCase();
-
     raw.split(',').forEach(function(p){
-      p = p.trim();
-      if (!p) return;
+      p = p.trim(); if (!p) return;
+      if (p !== '/' && p.endsWith('/')) p = p.slice(0, -1); // 去掉前缀尾斜杠
 
-      // 规范化前缀：去掉尾斜杠（除了根 '/')
-      if (p !== '/' && p.endsWith('/')) p = p.slice(0, -1);
-
-      // 首页精确匹配；其他：完全相等 或 作为前缀（p/…）
       var ok = (p === '/' && path === '/') ||
                (p !== '/' && (path === p || path.indexOf(p + '/') === 0));
 
       if (ok && p.length > bestLen) { best = a; bestLen = p.length; }
     });
   });
-
   if (best) { best.classList.add('active'); best.setAttribute('aria-current','page'); }
 })();
 </script>
