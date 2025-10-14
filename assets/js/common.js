@@ -51,6 +51,21 @@ function showBibTeX(modalId) {
     if (modal) {
         modal.classList.add('show');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+        // Post-format the visible bib content to aligned style
+        try {
+            const idBase = modalId.replace('desktop-', '').replace('mobile-', '');
+            const visibleId = modalId.includes('mobile') ? 'bibtex-content-mobile-' + idBase : 'bibtex-content-desktop-' + idBase;
+            const rawId = modalId.includes('mobile') ? 'bibtex-raw-mobile-' + idBase : 'bibtex-raw-desktop-' + idBase;
+            const visible = document.getElementById(visibleId);
+            const raw = document.getElementById(rawId);
+            if (visible && raw) {
+                const formatted = formatBibAligned(raw.textContent || raw.innerText);
+                visible.textContent = formatted;
+            }
+        } catch (e) {
+            console.warn('BibTeX format failed', e);
+        }
     }
 }
 
@@ -78,46 +93,58 @@ function copyBibTeX(modalId) {
     const itemId = modalId.includes('mobile-') ? modalId.replace('mobile-', '') :
                    modalId.includes('desktop-') ? modalId.replace('desktop-', '') : modalId;
 
-    const contentId = modalId.includes('mobile') ? 'bibtex-content-mobile-' + itemId : 'bibtex-content-desktop-' + itemId;
-    const contentElement = document.getElementById(contentId);
+    const rawId = modalId.includes('mobile') ? 'bibtex-raw-mobile-' + itemId : 'bibtex-raw-desktop-' + itemId;
+    const visibleId = modalId.includes('mobile') ? 'bibtex-content-mobile-' + itemId : 'bibtex-content-desktop-' + itemId;
+    const rawElement = document.getElementById(rawId);
+    const visibleElement = document.getElementById(visibleId);
 
-    if (contentElement) {
-        // Get the raw bib data from the Jekyll variable, not the formatted display
-        const allElements = document.querySelectorAll('[id^="bibtex-content-"]');
-        let rawBibText = '';
+    // Prefer: format the raw text, fallback to the currently displayed text
+    let copyText = '';
+    if (rawElement) {
+        copyText = formatBibAligned((rawElement.textContent || rawElement.innerText || '').trim());
+    }
+    if (!copyText && visibleElement) {
+        copyText = (visibleElement.textContent || visibleElement.innerText || '').trim();
+    }
 
-        // Find the corresponding raw bib data
-        for (let el of allElements) {
-            if (el.id.includes(itemId) && el.textContent.includes('@')) {
-                rawBibText = el.textContent.trim();
-                break;
-            }
-        }
-
-        // If not found, fall back to the displayed text but clean it up
-        if (!rawBibText) {
-            rawBibText = contentElement.textContent.trim();
-        }
-
-        // Clean up the text for copying (preserve the original BibTeX structure but normalize whitespace)
-        rawBibText = rawBibText
-            .replace(/[ \t]+/g, ' ')  // Replace multiple spaces/tabs with single space
-            .replace(/\n\s+/g, '\n')  // Remove spaces after newlines
-            .replace(/\n{3,}/g, '\n\n')  // Replace multiple newlines with double newline
-            .trim();
+    if (copyText) {
 
         // Use modern clipboard API if available, fallback to textarea method
         if (navigator.clipboard && window.isSecureContext) {
-            navigator.clipboard.writeText(rawBibText).then(() => {
+            navigator.clipboard.writeText(copyText).then(() => {
                 showCopySuccess(modalId);
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
-                fallbackCopyTextToClipboard(rawBibText, modalId);
+                fallbackCopyTextToClipboard(copyText, modalId);
             });
         } else {
-            fallbackCopyTextToClipboard(rawBibText, modalId);
+            fallbackCopyTextToClipboard(copyText, modalId);
         }
     }
+}
+
+// Format bib lines so that keys align with equal signs
+function formatBibAligned(text) {
+    const lines = (text || '').trim().split(/\r?\n/);
+    if (lines.length === 0) return '';
+    const first = lines[0].trim();
+    const last = lines[lines.length - 1].trim();
+    const middle = lines.slice(1, lines.length - 1).map(l => l.trim());
+
+    // extract key part before '=' and compute max length
+    const parts = middle.map(l => {
+        const idx = l.indexOf('=');
+        if (idx === -1) return { key: l, val: '', raw: l };
+        return { key: l.slice(0, idx).trim(), val: l.slice(idx + 1).trim(), raw: l };
+    });
+    const maxKey = parts.reduce((m, p) => Math.max(m, p.key.length), 0);
+    const pad = n => ' '.repeat(n);
+    const formatted = parts.map(p => {
+        if (!p.val) return p.raw;
+        return p.key + pad(Math.max(1, maxKey - p.key.length + 1)) + '= ' + p.val;
+    });
+
+    return [first].concat(formatted).concat([last]).join('\n');
 }
 
 function fallbackCopyTextToClipboard(text, modalId) {
