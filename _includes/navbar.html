@@ -8,24 +8,19 @@
       <i class="fas fa-map"></i> Menu
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-            
+    <div class="collapse navbar-collapse" id="navbarResponsive">      
       <ul class="navbar-nav ml-auto">
         {% assign current = page.nav_active | downcase | strip %}
         {% for item in site.data.navigation.pages %}
           {% assign name = item.name | downcase | strip %}
           {% assign href = item.url %}
-          {% assign is_active = (name == current) %}
+          {% assign active = (name == current) %}
       
-          <li class="nav-item{% if is_active %} active{% endif %}">
-            <a href="{{ href | relative_url }}"
-               class="nav-link{% if is_active %} active{% endif %}"
-               {% if is_active %}aria-current="page"{% endif %}>{{ item.name }}</a>
+          <li class="nav-item">
+            <a href="{{ href | relative_url }}" class="nav-link{% if active %} active{% endif %}"{% if active %} aria-current="page"{% endif %}>{{ item.name }}</a>
           </li>
         {% endfor %}
       </ul>
-
-
     </div>
   </div>
 </nav>
