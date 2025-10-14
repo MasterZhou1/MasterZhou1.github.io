@@ -10,16 +10,35 @@
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        {% assign current = page.navbar_title | default: page.nav_active | downcase | strip %}
-        {% for item in site.data.navigation.pages %}
-          {% assign name = item.name | downcase | strip %}
-          {% assign is_active = (name == current) %}
+        {%- assign current_url = page.url | replace: '/index.html','/' -%}
+        {%- assign current_name = page.navbar_title | default: page.nav_active | downcase | strip -%}
+      
+        {%- for item in site.data.navigation.pages -%}
+          {%- assign name = item.name | downcase | strip -%}
+          {%- assign href = item.url -%}  {# 用 raw url 做比较，输出时再 relative_url #}
+          {%- assign is_active = false -%}
+      
+          {# 1) 若页面显式设置了 nav_active / navbar_title，则用名字匹配 #}
+          {%- if current_name and current_name != '' -%}
+            {%- if name == current_name -%}{%- assign is_active = true -%}{%- endif -%}
+          {%- else -%}
+            {# 2) 否则用 URL 前缀匹配；首页用精确匹配 #}
+            {%- if href == '/' -%}
+              {%- if current_url == '/' -%}{%- assign is_active = true -%}{%- endif -%}
+            {%- else -%}
+              {%- if current_url != '/' and current_url | slice: 0, href.size == href -%}
+                {%- assign is_active = true -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endif -%}
+      
           <li class="nav-item{% if is_active %} active{% endif %}">
             <a class="nav-link{% if is_active %} active{% endif %}"
-               {% if is_active %}aria-current="page"{% endif %}
-               href="{{ item.url | relative_url }}">{{ item.name }}</a>
+               href="{{ href | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>
+              {{ item.name }}
+            </a>
           </li>
-        {% endfor %}
+        {%- endfor -%}
       </ul>
     </div>
   </div>
