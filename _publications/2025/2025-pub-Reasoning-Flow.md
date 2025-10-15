@@ -28,6 +28,6 @@ bib: |
 
 links:
   Paper: https://arxiv.org/abs/2510.09782
-  Code: https://github.com/MasterZhoul/Reasoning-Flow
+  Code: https://github.com/MasterZhou1/Reasoning-Flow
   Dataset: https://huggingface.co/datasets/MasterZhou/Reasoning-Flow
 ---
