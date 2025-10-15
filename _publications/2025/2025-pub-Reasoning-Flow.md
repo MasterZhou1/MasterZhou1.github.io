@@ -7,7 +7,7 @@ pub:            "arXiv"
 pub_date:       "2025"
 
 abstract: >-
-  We model how LLMs “think” through their embeddings by introducing a geometric framework of reasoning flows, where logical inference emerges as smooth trajectories in representation space whose velocity and curvature are governed by logical structure rather than surface semantics, validated through cross-topic, cross-language experiments that open a new lens for interpretability.
+  We study how LLMs “think” through their embeddings by introducing a geometric framework of reasoning flows, where reasoning emerges as smooth trajectories in representation space whose velocity and curvature are governed by logical structure rather than surface semantics, validated through cross-topic and cross-language experiments, opening a new lens for interpretability.
 
 
 cover:          /assets/images/covers/reasoning-flow.png
