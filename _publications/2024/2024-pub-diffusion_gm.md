@@ -21,11 +21,13 @@ authors:
 
 bib: |
   @inproceedings{liang2025unraveling,
-    title={Unraveling the Smoothness Properties of Diffusion Models: A Gaussian Mixture Perspective},
-    author={Liang, Yingyu and Sha, Zhizhou and Shi, Zhenmei and Song, Zhao and Wan, Mingda and Zhou, Yufa},
-    booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    year={2025}
-  }
+    author    = {Liang, Yingyu and Sha, Zhizhou and Shi, Zhenmei and Song, Zhao and Wan, Mingda and Zhou, Yufa},
+    title     = {Unraveling the Smoothness Properties of Diffusion Models: A Gaussian Mixture Perspective},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {11436-11446}
+}
 
 
 links:
