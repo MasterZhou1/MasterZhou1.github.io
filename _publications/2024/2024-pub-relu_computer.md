@@ -20,11 +20,12 @@ authors:
 
 bib: |
   @inproceedings{liang2025looped,
-  title={Looped ReLU MLPs May Be All You Need as Programmable Computers},
-  author={Yingyu Liang and Zhizhou Sha and Zhenmei Shi and Zhao Song and Yufa Zhou},
-  booktitle={The 28th International Conference on Artificial Intelligence and Statistics},
+  title={Looped ReLU MLPs May Be All You Need as Practical Programmable Computers},
+  author={Liang, Yingyu and Sha, Zhizhou and Shi, Zhenmei and Song, Zhao and Zhou, Yufa},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={2647--2655},
   year={2025},
-  url={https://openreview.net/forum?id=XjNFnBqrEi}
+  organization={PMLR}
   }
 
 links:
