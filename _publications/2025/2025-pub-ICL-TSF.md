@@ -29,4 +29,6 @@ bib: |
 links:
   Paper: https://arxiv.org/abs/2510.09776
   Code: https://github.com/MasterZhou1/ICL-Time-Series
+  Poster: /assets/pdfs/ICL_TSF_Poster.pdf
+  Slides: /assets/pdfs/ICL_TSF_Slides.pdf
 ---
