@@ -14,7 +14,7 @@ Against this background, the essay examines LLMs as systems that achieve remarka
 
 ### Full Paper (PDF)
 
-📄 **[Download the full essay (PDF)](articles/PHIL_681S_Wittgenstein.pdf)**
+📄 **[Download the full essay (PDF)](PHIL_681S_Wittgenstein.pdf)**
 
 *Final essay.*
 
