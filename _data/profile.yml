@@ -26,7 +26,7 @@ openreview: ~Yufa_Zhou1
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a 1st year CS PhD student at Duke University, advised by Prof. <a href="https://anruzhang.github.io/index.html">Anru Zhang</a>.
+    I am a 1st year CS PhD student at Duke University, advised by Prof. <a href="https://anruzhang.github.io/index.html">Anru Zhang</a>. I will be joining ByteDance in San Jose as a Research Scientist Intern in Summer 2026.
   </p>
   <p>
     <strong>I study the foundations/physics of advanced AI models, focusing on how and why they work.</strong>
@@ -60,11 +60,11 @@ education:
   position: B.E. in Engineering Mechanics
   date: Sep. 2019 - Jul. 2023
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: ByteDance, San Jose, CA
+  logo: /assets/images/badges/bytedance-color.png
+  position: Research Scientist Intern (ML System) 
+  date: Jun. 2026 - Aug. 2026
 
 # awards:
 # - name: Award Name 2
