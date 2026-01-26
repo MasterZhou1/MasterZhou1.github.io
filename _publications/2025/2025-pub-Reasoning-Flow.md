@@ -1,10 +1,10 @@
 ---
 title:          "The Geometry of Reasoning: Flowing Logics in Representation Space"
-date:           2025-10-13 00:01:00 +0800
+date:           2026-1-26 00:01:00 +0800
 selected:       true
-pub:            "arXiv"
+pub:            "ICLR"
 # pub_last:       '<span class="badge badge-pill badge-publication badge-success">Oral (3/68 ≈ 4.4%)</span>'
-pub_date:       "2025"
+pub_date:       "2026"
 
 abstract: >-
   We study how LLMs “think” through their embeddings by introducing a geometric framework of reasoning flows, where reasoning emerges as smooth trajectories in representation space whose velocity and curvature are governed by logical structure rather than surface semantics, validated through cross-topic and cross-language experiments, opening a new lens for interpretability.
