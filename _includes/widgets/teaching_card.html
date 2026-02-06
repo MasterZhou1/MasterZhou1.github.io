@@ -16,13 +16,9 @@
                 {% else %}
                   {{ c.name }}
                 {% endif %}
-                {% if c.term %} <span class="text-muted">({{ c.term }})</span>{% endif %}
+                {% if c.term or c.institution %} ({{ c.term }}{% if c.term and c.institution %}, {% endif %}{{ c.institution }}){% endif %}
+                {% if c.instructor %} - Instructor: {% if c.instructor_url %}<a href="{{ c.instructor_url }}" target="_blank" rel="noopener">{{ c.instructor }}</a>{% else %}{{ c.instructor }}{% endif %}{% endif %}
               </div>
-              {% if c.instructor %}
-                <div class="small text-muted">
-                  Instructor: {% if c.instructor_url %}<a href="{{ c.instructor_url }}" target="_blank" rel="noopener">{{ c.instructor }}</a>{% else %}{{ c.instructor }}{% endif %}
-                </div>
-              {% endif %}
             </div>
           </li>
           {% endfor %}
