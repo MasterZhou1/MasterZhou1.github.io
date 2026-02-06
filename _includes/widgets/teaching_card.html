@@ -17,7 +17,7 @@
                   {{ c.name }}
                 {% endif %}
                 {% if c.term or c.institution %} ({{ c.term }}{% if c.term and c.institution %}, {% endif %}{{ c.institution }}){% endif %}
-                {% if c.instructor %} — Instructor: {% if c.instructor_url %}<a href="{{ c.instructor_url }}" target="_blank" rel="noopener">{{ c.instructor }}</a>{% else %}{{ c.instructor }}{% endif %}{% endif %}
+                {% if c.instructor %} - Instructor: {% if c.instructor_title %}{{ c.instructor_title }} {% endif %}{% if c.instructor_url %}<a href="{{ c.instructor_url }}" target="_blank" rel="noopener">{{ c.instructor }}</a>{% else %}{{ c.instructor }}{% endif %}{% endif %}
               </div>
             </div>
           </li>

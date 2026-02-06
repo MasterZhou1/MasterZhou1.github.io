@@ -2,5 +2,6 @@
   url: "https://sites.google.com/view/dukecompsci590-4-spring2026/home"
   term: "Spring 2026"
   institution: "Duke"
-  instructor: "Prof. Rong Ge"
+  instructor_title: "Prof."
+  instructor: "Rong Ge"
   instructor_url: "https://users.cs.duke.edu/~rg171/"
