@@ -1,0 +1,37 @@
+{% assign teaching = site.data.teaching | default: empty %}
+<div id="teaching" class="row mt-3">
+  <div class="col">
+    <div class="card border-0 shadow-sm bg-white">
+      <div class="card-body p-4">
+        <h6 class="mb-2">Teaching</h6>
+
+        {% if teaching and teaching.size > 0 %}
+        <ul class="list-unstyled mb-1">
+          {% for c in teaching %}
+          <li class="media mb-2">
+            <div class="media-body">
+              <div>
+                {% if c.url %}
+                  <a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.name }}</a>
+                {% else %}
+                  {{ c.name }}
+                {% endif %}
+                {% if c.term %} <span class="text-muted">({{ c.term }})</span>{% endif %}
+              </div>
+              {% if c.instructor %}
+                <div class="small text-muted">
+                  Instructor: {% if c.instructor_url %}<a href="{{ c.instructor_url }}" target="_blank" rel="noopener">{{ c.instructor }}</a>{% else %}{{ c.instructor }}{% endif %}
+                </div>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+          <p class="text-muted mb-0">Coming soon.</p>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</div>
