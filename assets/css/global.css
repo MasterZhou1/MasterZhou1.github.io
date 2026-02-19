@@ -6,7 +6,6 @@ body {
     padding-top: 4.5rem;
     line-height: 1.55;
     color: #000;
-    background-color: #fff !important;
 }
 
 a {
@@ -30,9 +29,21 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-    opacity: 0.97;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
+}
+
+.navbar .nav-link {
+    font-weight: 400;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar .nav-link.active {
+    font-weight: 700;
 }
 
 .inline-badge {
@@ -79,26 +90,9 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
-.navbar .nav-link {
-    font-weight: 400;
-    padding: 0.4rem 0.6rem;
-    border-radius: 0.25rem;
-    transition: background-color 0.15s ease, color 0.15s ease;
-}
-.navbar .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-}
-.navbar .nav-link.active {
-    font-weight: 700;
-}
-
 /* ── Homepage cards ── */
 .card.border-0 {
-    border-radius: 0.4rem;
-}
-
-.card-body {
-    padding: 1.5rem !important;
+    border-radius: 0.5rem;
 }
 
 .card-body h6 {
@@ -135,12 +129,15 @@ div.lazy {
 
 /* ── Article page ── */
 .article-content {
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: 2rem 3rem;
     line-height: 1.7;
     font-size: 1.05rem;
     color: #000;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .article-content h2 {
