@@ -4,7 +4,7 @@ body {
     font-weight: 400;
     padding-top: 5.0rem;
     line-height: 1.6;
-    color: #333;
+    color: #1a1a1a;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700;
-    color: #222;
+    color: #111;
 }
 
 .text-profile-position {
@@ -23,9 +23,8 @@ h1, h2, h3, h4, h5, h6,
 
 .text-profile-bio {
     font-weight: 400;
-    line-height: 1.75;
-    font-size: 0.95rem;
-    color: #444;
+    line-height: 1.7;
+    color: #1a1a1a;
 }
 
 .navbar {
@@ -107,7 +106,7 @@ div.lazy {
     margin-top: 3rem;
     padding: 0.75rem 0;
     font-size: 0.85rem;
-    color: #999;
+    color: #888;
 }
 
 /* ── Publication items ── */
@@ -133,9 +132,9 @@ div.lazy {
     max-width: 720px;
     margin: 0 auto;
     padding: 2rem 0;
-    line-height: 1.8;
+    line-height: 1.75;
     font-size: 1.05rem;
-    color: #2d2d2d;
+    color: #1a1a1a;
 }
 
 .article-content h2 {
@@ -181,14 +180,7 @@ div.lazy {
     border-left: 3px solid #ccd0d4;
     padding-left: 1rem;
     margin: 1.5rem 0;
-    color: #555;
-}
-
-.article-content em:last-child:only-child {
-    display: block;
-    text-align: right;
-    color: #777;
-    margin-top: 1rem;
+    color: #444;
 }
 
 /* BibTeX Modal Styles */
