@@ -3,11 +3,18 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding-top: 5.0rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    transition: color 0.15s ease;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700;
+    color: #222;
 }
 
 .text-profile-position {
@@ -15,12 +22,16 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .text-profile-bio {
-    /* font-family: "Raleway"; */
     font-weight: 400;
+    line-height: 1.75;
+    font-size: 0.95rem;
+    color: #444;
 }
 
 .navbar {
     opacity: 0.95;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .inline-badge {
@@ -69,8 +80,116 @@ div.lazy {
 
 
 
-.navbar .nav-link { font-weight: 400; }
-.navbar .nav-link.active { font-weight: 600; }
+.navbar .nav-link {
+    font-weight: 400;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+.navbar .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+.navbar .nav-link.active {
+    font-weight: 600;
+}
+
+/* ── Homepage cards ── */
+.card.border-0 {
+    border-radius: 0.5rem;
+}
+
+.card-body h6 {
+    letter-spacing: 0.01em;
+}
+
+/* ── Footer ── */
+.footer {
+    margin-top: 3rem;
+    padding: 0.75rem 0;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* ── Publication items ── */
+.item-container h5 {
+    line-height: 1.45;
+}
+
+.abstract-links a {
+    margin-right: 0.15rem;
+}
+
+/* ── Showcase cards ── */
+.grid-item .shadow-sm {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.grid-item .shadow-sm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Article page readability */
+.article-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #2d2d2d;
+}
+
+.article-content h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.65rem;
+}
+
+.article-content h3 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.article-content p {
+    margin-bottom: 1.2rem;
+}
+
+.article-content hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #dce0e4;
+}
+
+.article-content ul,
+.article-content ol {
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+}
+
+.article-content li {
+    margin-bottom: 0.6rem;
+}
+
+.article-content .katex-display {
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 0;
+}
+
+.article-content blockquote {
+    border-left: 3px solid #ccd0d4;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #555;
+}
+
+.article-content em:last-child:only-child {
+    display: block;
+    text-align: right;
+    color: #777;
+    margin-top: 1rem;
+}
 
 /* BibTeX Modal Styles */
 .bibtex-modal {
