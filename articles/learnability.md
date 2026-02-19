@@ -6,7 +6,7 @@ permalink: /articles/learnability/
 
 ## The Unreasonable Elegance of AIGC: On the Learnability of LLMs and Diffusion Models
 
-As I begin to dig deeper into the elegant design of modern AI systems like LLMs and Diffusion models, I realize the overall framework not only works, but it is mathematically and intuitively beautiful. For a long time, we treated generating realistic images or human-level text as an esoteric art. But the true "miracle" of the current AI era is how we managed to turn the intractable problem of "learning any structured distribution" into a highly tractable data engineering and optimization problem. While the real distribution of human knowledge is extremely complicated, it *has* to be learnable; it shares underlying hidden patterns that might be impossible for humans to explicitly extract and recreate, yet they exist statistically.
+As I begin to dig deeper into the elegant design of modern AI systems like LLMs and Diffusion models, I realize the overall framework not only works, but it is mathematically and intuitively *beautiful*. For a long time, we treated generating realistic images or human-level text as an esoteric art. But the true "miracle" of the current AI era is how we managed to turn the *intractable* problem of "learning complicated structured distribution" into a highly *tractable* data engineering and optimization problem. While the real distribution of human knowledge is extremely complicated, it has to be **learnable**; it shares underlying hidden patterns that might be impossible for humans to explicitly extract and recreate, yet they exist statistically.
 
 ---
 
@@ -58,7 +58,7 @@ The answer is counterintuitive: the classic fear of "overfitting" is reframed. I
 
 - Diffusion compresses the visual features of reality.
 
-Intelligence emerges directly from this massive compression. The scaling laws suggest that as compute and data increase, the model's ability to compress information improves, yielding a richer internal representation. However, this raw model is not immediately usable. Post-training (like SFT and RLHF/RLVR) primarily exists to make this compressed universe communicable. It aligns the model's output distribution and elicits specific behaviors so that humans can efficiently access the deep knowledge stored within its weights.
+Intelligence emerges directly from this massive compression. The scaling laws suggest that as compute and data increase, the model's ability to compress information improves, yielding a richer internal representation. However, this raw model is not immediately usable. Post-training (like SFT and RLHF/RLVR) primarily exists to make this compressed universe *communicable*. It aligns the model's output distribution and elicits specific behaviors so that humans can efficiently access the deep knowledge stored within its weights.
 
 ---
 
@@ -78,7 +78,7 @@ $$
 L(\mathbf{p}) = -\sum_{i=1}^{\mathcal{V}} y_i \log(p_i)
 $$
 
-With respect to the target predictions ($\hat{y}$ or $\mathbf{p}$), both of these functions are convex. While the global parameter space $\theta$ of a deep neural network remains a chaotic, highly non-convex landscape, these loss functions provide well-behaved local supervision signals. As long as the optimizer (like Adam) evaluates a local region, the gradient usually provides a genuine, reliable slope to descend. Coupled with the massive over-parameterization of architectures like Transformers, the non-convex landscape becomes broad and forgiving. In high-dimensional spaces, many local minima tend to achieve similarly excellent loss values.
+With respect to the target predictions ($\hat{y}$ or $\mathbf{p}$), both of these functions are **convex** (MSE is strictly convex, and when equipped with softmax, Cross-Entropy is also strictly convex). While the global parameter space $\theta$ of a deep neural network remains a chaotic, highly *non-convex* landscape, these loss functions provide well-behaved local supervision signals. As long as the optimizer (like Adam) evaluates a local region, the gradient typically provides a genuine, reliable slope to descend. Coupled with the massive over-parameterization of architectures like Transformers, the non-convex landscape becomes broad and forgiving. In high-dimensional spaces, many local minima tend to achieve similarly excellent loss values.
 
 ---
 
