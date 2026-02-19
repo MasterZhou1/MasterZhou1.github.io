@@ -38,7 +38,7 @@ The fundamental genius of both Next Token Prediction (NTP) in LLMs and the Score
   x_t = \alpha(t)x_0 + \sigma(t)\epsilon, \quad \epsilon \sim \mathcal{N}(0, I)
   $$
 
-  Instead of hallucinating $x_0$ from $x_T$, the model is simply asked: "In this current state $x_t$, what was the noise $\epsilon$ added to it?". It is no longer "creating from nothing"; it is fundamentally residual learning. The intractable Bayesian reverse process $p(x_{t-1} | x_t)$ is approximated by learning to estimate this noise, which mathematically aligns with Score Matching—learning the gradient of the data density $\nabla_{x_t} \log p(x_t)$. This boils down to a denoising regression, often implemented as the stable, mathematically gorgeous Mean Squared Error (MSE) objective:
+  Instead of hallucinating $x_0$ from $x_T$, the model is simply asked: "In this current state $x_t$, what was the noise $\epsilon$ added to it?". It is no longer "creating from nothing"; it is fundamentally residual learning. The intractable Bayesian reverse process $p(x_{t-1} \mid x_t)$ is approximated by learning to estimate this noise, which mathematically aligns with Score Matching—learning the gradient of the data density $\nabla_{x_t} \log p(x_t)$. This boils down to a denoising regression, often implemented as the stable, mathematically gorgeous Mean Squared Error (MSE) objective:
 
   $$
   \mathcal{L}_{\text{Diffusion}} = \mathbb{E}_{t, x_0, \epsilon} \left[ \|\epsilon - \epsilon_\theta(x_t, t)\|^2 \right]
