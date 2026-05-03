@@ -34,11 +34,13 @@ short_bio: >-
   <p>
     My current research centers on understanding <em>how</em> and <em>why</em> advanced AI models—such as large language models and diffusion models—work, and on leveraging this understanding to make them more accurate, efficient, and robust.  
     I am deeply obsessed with understanding intelligence from <strong>first principles</strong>.
-    # More broadly, I am interested in AI across theoretical, empirical, and even philosophical dimensions, as well as in areas where stronger foundations may unlock exciting applications, from trustworthy AI to agentic intelligence and AI for science.
   </p>
   <p>
     I am always open to discussions and collaborations. Feel free to reach out.
   </p>  
+  
+# More broadly, I am interested in AI across theoretical, empirical, and even philosophical dimensions, as well as in areas where stronger foundations may unlock exciting applications, from trustworthy AI to agentic intelligence and AI for science.
+
 portrait_url: /assets/images/photos/yufa_kaze.jpg
 # /assets/images/photos/me.jpg
 portrait_caption: >-
