@@ -29,5 +29,5 @@ bib: |
 
 links:
   Paper: https://arxiv.org/abs/2501.19201
-  code: https://github.com/shawnricecake/Heima
+  Code: https://github.com/shawnricecake/Heima
 ---

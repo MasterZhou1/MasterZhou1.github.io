@@ -18,7 +18,6 @@ github: MasterZhou1
 twitter: yufa_zhou  # Do not include the '@' symbol
 wechat_qrcode: /assets/images/etc/WechatIMG64.jpg
 wechat_prompt: 微信号：YufaZhou-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 linkedin: yufazhou
 # orcid: 0000-0003-4115-3225
 openreview: ~Yufa_Zhou1
@@ -39,13 +38,11 @@ short_bio: >-
     I am always open to discussions and collaborations. Feel free to reach out.
   </p>  
   
-# More broadly, I am interested in AI across theoretical, empirical, and even philosophical dimensions, as well as in areas where stronger foundations may unlock exciting applications, from trustworthy AI to agentic intelligence and AI for science.
 
 portrait_url: /assets/images/photos/yufa_kaze.jpg
 # /assets/images/photos/me.jpg
 portrait_caption: >-
-  Anything that can be verbalized can be solved, and anything that cannot is unthinkable.
-# Anything that can be verbalized can be solved.  
+  Anything that can be verbalized can be solved, and anything that cannot is unthinkable. 
 # “The limits of my language mean the limits of my world.” — Wittgenstein
   
 education:
