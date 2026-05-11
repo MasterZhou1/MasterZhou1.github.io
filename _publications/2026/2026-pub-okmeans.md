@@ -10,7 +10,7 @@ abstract: >-
 
 # cover:          /assets/images/covers/robust-clustering.png
 authors:
-  - Tianle Jiang
+  - Tianle Jiang@
   - Yufa Zhou
 
 bib: |
