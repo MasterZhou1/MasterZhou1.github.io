@@ -31,7 +31,7 @@ bib: |
   
 
 links:
-  Paper: https://arxiv.org/abs/2405.16418
+  Paper: https://openaccess.thecvf.com/content/ICCV2025/papers/Liang_Unraveling_the_Smoothness_Properties_of_Diffusion_Models_A_Gaussian_Mixture_ICCV_2025_paper.pdf
   # Code: https://github.com/luost26/academic-homepage
   # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
