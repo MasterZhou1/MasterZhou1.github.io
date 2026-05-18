@@ -14,6 +14,8 @@ $$
 
 I used to think the boundary of automation was the boundary of verbalization: if a task can be clearly described, then perhaps it can eventually be solved by either humans or AI. But in the agent paradigm, the sharper condition is whether a task can be converted into an agent-friendly environment. The bottleneck shifts from execution to communication, specification, and evaluation.
 
+---
+
 In the earlier stage, AI was often treated as a helper: a search interface, knowledge retriever, or assistant for local tasks. In the agent stage, the relation becomes more ambiguous. Humans increasingly provide goals, contexts, constraints, and feedback, while AI systems execute, search, and iterate.
 
 A task becomes vulnerable once it can be wrapped into a loop:
@@ -239,3 +241,8 @@ $$
 $$
 
 That part is where the future premium lives.
+
+
+---
+
+*Yufa Zhou — May 18, 2026*
