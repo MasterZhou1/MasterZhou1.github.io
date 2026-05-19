@@ -14,6 +14,8 @@ $$
 
 I used to think the boundary of automation was the boundary of verbalization: if a task can be clearly described, then perhaps it can eventually be solved by either humans or AI. But in the agent paradigm, the sharper condition is whether a task can be converted into an agent-friendly environment. The bottleneck shifts from execution to communication, specification, and evaluation.
 
+> Language gives agents instructions. Benchmarks give agents gradients.
+
 ---
 
 In the earlier stage, AI was often treated as a helper: a search interface, knowledge retriever, or assistant for local tasks. In the agent stage, the relation becomes more ambiguous. Humans increasingly provide goals, contexts, constraints, and feedback, while AI systems execute, search, and iterate.
@@ -24,7 +26,7 @@ $$
 \text{task} \rightarrow \text{environment} \rightarrow \text{action space} \rightarrow \text{feedback} \rightarrow \text{optimization}
 $$
 
-The central object is not whether the task uses human language, such as text, code, or mathematics. The central object is whether the task is benchmarkable. Human-readable text helps with auditing and interpretability, but AI only needs a medium that preserves **evaluable structure**. Once a task can be evaluated, searched, optimized, and iterated, agents can enter the loop.
+The central point is not whether the task uses human language, such as text, code, or mathematics, nor how difficult the task is. The central question is whether the task is **benchmarkable**. Human-readable text helps with auditing and interpretability, but AI only requires a medium that preserves **stable, evaluable structure**. Once a task can be evaluated, searched, optimized, and iterated, agents can enter the loop.
 
 This changes the location of human scarcity. The scarce part is no longer pure execution, or even technical ability in the ordinary sense. It is the capacity to define what matters before the task has fully stabilized.
 
@@ -38,13 +40,13 @@ Once a benchmark exists, the target has become partially explicit. Once the targ
 
 This explains why many domains previously considered resistant to automation are becoming partially solvable: mathematics, software engineering, law, research, visual art, audio production, and video generation.
 
-This does not imply that every component of these jobs disappears. Real work is a mixture of benchmarkable and unbenchmarkable subproblems: execution, judgment, communication, responsibility, taste, context, and coordination. But the benchmarkable portion is often the first part that organizations reward, precisely because it is legible, measurable, and scalable.
+This does not imply that every component of these jobs disappears. Real work is a mixture of benchmarkable and unbenchmarkable subproblems: execution, judgment, communication, responsibility, taste, context, and coordination. But the benchmarkable portion is often the first part that human organizations reward, precisely because it is legible, measurable, and scalable.
 
 A coding task is benchmarkable. A legal memo is partially benchmarkable. A math proof becomes benchmarkable when the verifier is formalized. A research direction becomes more benchmarkable when the field stabilizes around datasets, metrics, and leaderboards. An image becomes more benchmarkable when preference models, aesthetic predictors, and human feedback loops approximate preferred taste.
 
 The moment a field develops a stable evaluation protocol, it creates the conditions for AI systems to optimize it. Benchmarkability is therefore both a mechanism of progress and a mechanism of commoditization. It makes improvement measurable, but by doing so, it also makes improvement automatable.
 
-The fragility of standard excellence is that it is excellence under a known metric. Known metrics are exactly what optimization systems are built to consume.
+The fragility of standard excellence is that it is *excellence under a known metric*. Known metrics are exactly what optimization systems are built to consume.
 
 ---
 
@@ -64,7 +66,7 @@ But every signal decays when it becomes common.
 
 When more people acquire the same credential, the credential becomes less informative. When more people are trained to solve predefined problems, “being good at solving predefined problems” becomes less scarce. The marginal standardized achiever carries less signal because the profile itself has become less scarce.
 
-The deeper issue is structural. Standardized excellence is benchmarkable excellence. It is excellence inside a predefined reward function. The problem is given externally, the rubric is specified externally, and the score is assigned externally.
+The deeper issue is structural. **Standardized excellence is benchmarkable excellence**. It is excellence inside a predefined reward function. The problem is given externally, the rubric is specified externally, and the score is assigned externally.
 
 This works well in closed environments. It works less well in open-ended reality. It works even worse in the Agent Era, because agents are also benchmark optimizers, but with extreme patience, memory, parallelism, and iteration speed.
 
@@ -74,7 +76,7 @@ $$
 \text{perform well} \Rightarrow \text{enter the system} \Rightarrow \text{receive stability}
 $$
 
-That contract was historically contingent, not universal. When the environment changes, people who still optimize for the old contract silently carry the tail risk. The pain is not only economic. It is epistemic: the map that once organized life no longer matches the territory.
+That contract was historically contingent; however, it was not universal. When the environment changes, people who continue to optimize for the old contract silently carry the societal tail risk. The pain is not only economic; it is also epistemic: the map that once organized life no longer matches the territory.
 
 A person can still win inside established institutions, but the expected value of that victory decreases. The path becomes crowded, the signal weakens, and the reward compresses. What remains is often a sequence of increasingly competitive status ladders:
 
@@ -104,9 +106,9 @@ $$
 
 This is merely metric substitution driven by inertia, not a solution to the real problem.
 
-The pursuit of certainty is dangerous because a given metric is never neutral. Whoever defines the metric partially defines the person who optimizes for it. A benchmark is not only an evaluation device; it is also a behavioral shaping mechanism.
+The pursuit of certainty is *dangerous* because a given metric is never neutral. Whoever defines the metric partially defines the person who optimizes for it. A benchmark is not only an evaluation device; it is also a behavioral shaping mechanism.
 
-Stability itself is not the problem. In many cases, stability is rational. Random movement is not better; unstructured chaos destroys people faster than stagnation. The real distinction is not stability versus movement, but robust positioning versus hiding inside an unverified familiar metric.
+Stability itself is not the problem. In many cases, stability is rational. Random movement is not better; unstructured chaos destroys people faster than stagnation. The real distinction is not stability versus movement, but **robust positioning and pivoting versus hiding inside an unverified, familiar metric**.
 
 A good position remains adaptive under distribution shift. A fragile position only looks safe because the environment has not changed yet.
 
@@ -150,7 +152,7 @@ A trivial paper reduces no meaningful uncertainty on a problem no one cares abou
 
 This is why problem definition dominates execution in research. A perfect solution to a mediocre problem remains mediocre, while a partial solution to a great problem can be historically meaningful. Most people focus on solution quality because it is easier to evaluate, but in high-variance domains, the problem itself is the main source of expected value.
 
-Life is also closer to SGD. The full objective is unknown. Gradients are sampled from local experience. Updates happen under noise. People get trapped in basins, overfit to early rewards, and mistake local smoothness for global truth.
+**Life is also closer to SGD**. The full objective is unknown. Gradients are sampled from local experience. Updates happen under noise. People get trapped in basins, overfit to early rewards, and mistake local smoothness for global truth.
 
 This is the sense in which choice can matter more than effort. Under power-law structure, direction is often more important than step size.
 
@@ -176,7 +178,7 @@ The solution is not to reject evaluation. That would be naive. The right questio
 
 A random person’s disapproval should have a near-zero gradient. A precise criticism from a well-calibrated person should have a high gradient. The key is to be tactical about whose judgment deserves weight and whose experience to distill. An institutional rejection should be interpreted through the institution’s objective function. A market signal deserves attention, but not worship.
 
-In the Agent Era, permission-seeking becomes especially costly. It waits for an existing authority to define the game, while the highest-value games are often illegible at birth. If execution becomes cheap across many domains, then the bottleneck shifts toward deciding what is worth executing.
+In the Agent Era, **permission-seeking becomes especially costly**. It waits for an existing authority to define the game, while the highest-value games are often illegible at birth. If execution becomes cheap across many domains, then the bottleneck shifts toward deciding what is worth executing.
 
 The agent waits for a command. The human problem is to have a command that is actually one’s own.
 
@@ -190,7 +192,7 @@ Taste is often treated as mysterious, but it can be framed more precisely.
 
 Taste is one’s judgment over what deserves attention: a compressed meta-prior over what is likely to matter, what is aesthetically coherent, what is technically fertile, and what is socially mispriced. It appears in research, startups, art, music, movies, friendships, lifestyles, and almost every repeated allocation of attention.
 
-Taste reduces search cost. Without it, exploration begins almost randomly from every starting point. With it, attention is allocated toward regions with higher expected gain or better initialization. In this sense, taste is a heuristic for nonlinear uncertainty reduction.
+Taste reduces search cost. Without it, exploration begins almost randomly from every starting point. With it, attention is allocated toward regions with higher expected gain or better initialization. In this sense, taste is a heuristic for *nonlinear uncertainty reduction*.
 
 $$
 \text{Taste} \approx P(\text{future value} \mid \text{weak early signal})
@@ -212,17 +214,17 @@ Taste also contains desire. If one genuinely likes a direction, time spent there
 
 ### 8) Asymmetric Time and the Cold Start Problem
 
-Talent helps, but talent is not magic. Nobody is born knowing calculus. Nobody is born with mature taste. The important difference is that time does not have equal return for everyone.
+Talent helps, but talent is not magic. Nobody is born knowing calculus. Nobody is born with mature taste. The important difference is that **time does not have equal return for everyone**.
 
 For some people, one year compounds into ten years of insight because they occupy the right environment, feedback loop, abstraction level, and energy distribution. For others, ten years produce only one year of growth because the work is low-information and repetitive.
 
-Genius is not only high ability, which is merely the surface observable. Genius is asymmetric time spent on the right things.
+Genius is not only high ability, which is merely the surface observable. **Genius is asymmetric time spent on the right things**.
 
 Once the first breakthrough happens, the process becomes nonlinear. The person gains better collaborators, better priors, stronger confidence, higher-quality projects, and access to more selective networks. The next unit of time becomes more valuable than the previous one.
 
 This is the real cold start problem of life. Before the first breakthrough, people are mostly evaluated by old signals. After the first breakthrough, they begin to generate their own signal. Before the first breakthrough, others ask where they came from. After the first breakthrough, others ask what they see next.
 
-This is why taste and interest matter so much in the starting phase. They allow a person to stay inside a high-uncertainty direction long enough for compounding to begin.
+This is why taste and interest matter so much in the early phase. They allow a person to stay in a high-uncertainty direction long enough for compounding to begin.
 
 ---
 
@@ -230,13 +232,13 @@ This is why taste and interest matter so much in the starting phase. They allow 
 
 The Agent Era does not eliminate human value. It relocates it.
 
-Known tasks will be executed increasingly well by agents: faster, cheaper, more patiently, and at larger scale. Human scarcity therefore moves upstream: from solving assigned tasks to deciding what should be solved; from producing outputs to judging which outputs matter; from optimizing known metrics to constructing new value functions.
+Known tasks will be executed increasingly well by agents: faster, cheaper, more patiently, and at larger scale. Human scarcity therefore moves *upstream*: from solving assigned tasks to deciding what should be solved; from producing outputs to judging which outputs matter; from optimizing known metrics to constructing new value functions.
 
 These capacities are hard to measure because they operate upstream of measurement itself.
 
 Benchmarks remain useful as training devices. Signals remain useful as access mechanisms. Institutions remain useful as density machines. Technical skill remains useful as leverage and understanding. But none of them should be confused with the source of long-term differentiation.
 
-To be unbenchmarkable is not to be vague, lazy, or anti-technical. It is to be technical enough to use benchmarks without becoming reducible to them. It means passing filters without worshiping them, learning from evaluation without outsourcing judgment, and developing unique taste before consensus has stabilized.
+To be unbenchmarkable is not to be vague, lazy, or anti-technical. It is *to be technical enough to use benchmarks without becoming reducible to them*. It means passing filters without worshiping them, learning from evaluation without outsourcing judgment, and developing unique taste before consensus has stabilized.
 
 The Agent Era will make many people more productive. It will also make many people more replaceable, because productivity inside a known frame is exactly what scales.
 
