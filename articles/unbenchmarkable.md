@@ -196,11 +196,17 @@ $$
 \text{Taste} \approx P(\text{future value} \mid \text{weak early signal})
 $$
 
-This is why taste is hard to benchmark. A mature benchmark evaluates what is already legible. Taste operates before legibility. It is hard to define, ambiguous, and latent, more like a representation than a rule. It detects structure while the signal is still vague, noisy, and socially underpriced.
+This is why good taste is hard to benchmark before it becomes legible.
+
+A mature benchmark evaluates what the world has already learned to see. Taste operates earlier. It detects structure while the signal is still weak, noisy, and socially underpriced. It is latent and difficult to formalize, more like a representation than a rule.
+
+To be unbenchmarkable is not to be impossible to evaluate forever. Many things that feel unbenchmarkable today will later be proxied, modeled, optimized, and commoditized. The excess value lies in the interval before the benchmark stabilizes, when the object, metric, and value function are still being formed.
+
+In this sense, taste is broader. It is judgment before the frame has settled: the ability to notice what may matter before it becomes obvious what should be measured.
 
 Good research taste notices a problem before it becomes a field. Good startup taste notices a behavior before it becomes a market. Good artistic taste notices a form before it becomes a style. Good life taste notices a path before it becomes a commodity.
 
-Taste also contains desire and interest. If one genuinely likes a direction, time spent there is not only pain but also energy-preserving pleasure. This asymmetry matters because taste is not only a judgment function; it is also an allocation function. It determines where attention can be sustained long enough for hidden structure to become visible.
+Taste also contains desire. If one genuinely likes a direction, time spent there is not only pain but energy-preserving pleasure. This matters because taste is not only a judgment function, but also an allocation function. It determines where attention can be sustained long enough for hidden structure to become visible.
 
 ---
 
