@@ -25,15 +25,18 @@ openreview: ~Yufa_Zhou1
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a 1st year CS PhD student at Duke University, advised by Prof. <a href="https://anruzhang.github.io/index.html">Anru Zhang</a>. 
+    I am a CS PhD student at Duke University, advised by Prof. <a href="https://anruzhang.github.io/index.html">Anru Zhang</a>. 
   </p>
-  <p>
+  <!-- <p>
     <strong>I study the science of advanced AI models.</strong>
-  </p>
+  </p> -->
   <p>
-    My current research centers on understanding <em>how</em> and <em>why</em> advanced AI models—such as large language models and diffusion models—work, and on leveraging this understanding to make them more accurate, efficient, and robust.  
-    I am obsessed with understanding intelligence from <strong>first principles</strong>.
+    I am currently doing <strong>auto-research on post-training</strong> at ByteDance.
   </p>
+  <!-- <p>
+    My research interests lie in understanding <em>how</em> and <em>why</em> advanced AI models—such as large language models and diffusion models—work, and on leveraging this understanding to make them more accurate, efficient, and robust.  
+    I am obsessed with understanding intelligence from <strong>first principles</strong>.
+  </p> -->
   <p>
     I am always open to discussions and collaborations. Feel free to reach out.
   </p>  
@@ -62,8 +65,8 @@ education:
 experience:
 - name: ByteDance, San Jose, CA
   logo: /assets/images/badges/bytedance-color.png
-  position: Research Scientist Intern (ML System) 
-  date: Jun. 2026 - Aug. 2026
+  position: Research Scientist Intern
+  date: Jun. 2026 - Present
 
 # awards:
 # - name: Award Name 2
@@ -75,5 +78,5 @@ experience:
 
 
 academic_services:
-  conference: ["ICLR (2025, 2026)", "NeurIPS 2026", "ICML 2026", "AAAI 2026"]
+  conference: ["ICLR (2025, 2026)", "NeurIPS 2026", "ICML 2026", "AAAI (2026, 2027)"]
   # journal: ["TKDE", "TNNLS"]
