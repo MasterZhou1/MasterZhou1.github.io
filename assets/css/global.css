@@ -28,6 +28,29 @@ h1, h2, h3, h4, h5, h6,
     color: #000;
 }
 
+.profile-lab-icon {
+    width: 1em;
+    height: 1em;
+    display: block;
+}
+
+.profile-social {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
+    line-height: 1;
+}
+.profile-social a {
+    padding: 0.15rem 0.22rem;
+    display: inline-flex;
+    color: #007bff;
+}
+.profile-social a:hover {
+    color: #0056b3;
+}
+
 .navbar {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);

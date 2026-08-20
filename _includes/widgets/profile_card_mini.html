@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="row pt-2">
-                    <div class="col text-center h4">
+                    <div class="col text-center profile-social">
                         {% if site.data.profile.gscholar %}
                         <a class="px-1 no-break" target="_blank" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}&hl=en">
                             <i class="fab fa-google-scholar"></i>
@@ -85,6 +85,14 @@
                         {% if site.data.profile.linkedin %}
                         <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
                             <i class="fab fa-linkedin"></i>
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.lab %}
+                        <a class="px-1 no-break" target="_blank" href="{{ site.data.profile.lab.url }}">
+                            <svg class="profile-lab-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                                <path d="M3 28 C14 28 18 20 22 11 C24 6 26 4 29 3" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                            </svg>
                         </a>
                         {% endif %}
 

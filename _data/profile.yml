@@ -8,6 +8,10 @@ positions:
 # - logo: /assets/images/badges/bytedance-color.png
 #   name: Research Scientist Intern @ ByteDance
 
+lab:
+  name: nonlinearity
+  url: https://nonlinearity.net/
+
 
 email: "yufa.zhou@duke.edu"
 # cv_link: /assets/pdfs/Yufa_Zhou_CV.pdf
@@ -26,6 +30,9 @@ short_bio_text_justify: false
 short_bio: >-
   <p>
     I am a CS PhD student at Duke University, advised by Prof. <a href="https://anruzhang.github.io/index.html">Anru Zhang</a>, interning at ByteDance, doing <strong>autoresearch on post-training</strong>.
+  </p>
+  <p>
+    I also run <a href="https://nonlinearity.net/" target="_blank" rel="noopener">Nonlinearity</a>, an independent research effort on self-influencing systems.
   </p>
   <!-- <p>
     I am a CS PhD student at Duke University, advised by Prof. <a href="https://anruzhang.github.io/index.html">Anru Zhang</a>. 
