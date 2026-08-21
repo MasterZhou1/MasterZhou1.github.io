@@ -42,12 +42,24 @@ h1, h2, h3, h4, h5, h6,
     font-size: 1.35rem;
     line-height: 1;
 }
-.profile-social a {
+.profile-social a,
+.profile-social a:link,
+.profile-social a:visited,
+.profile-social a:hover,
+.profile-social a:focus,
+.profile-social a:focus-visible,
+.profile-social a:active {
     padding: 0.15rem 0.22rem;
     display: inline-flex;
+    align-items: center;
     color: #007bff;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    border: none;
+    outline: none;
 }
-.profile-social a:hover {
+.profile-social a:hover,
+.profile-social a:focus-visible {
     color: #0056b3;
 }
 
