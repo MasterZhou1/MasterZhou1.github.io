@@ -163,8 +163,10 @@ div.lazy {
 }
 
 /* ── Article page ── */
+/* 48rem box minus the 3rem side padding leaves a 42rem measure, which keeps
+   lines near 85 characters and makes figures flush with the text column. */
 .article-content {
-    max-width: 100%;
+    max-width: 48rem;
     margin: 0 auto;
     padding: 2rem 3rem;
     line-height: 1.7;
@@ -331,4 +333,12 @@ div.lazy {
     color: #28a745;
     font-size: 14px;
     margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+    /* 3rem of side padding costs a third of a phone screen, which leaves the
+       measure too short to read comfortably. */
+    .article-content {
+        padding: 1.5rem 1.25rem;
+    }
 }
