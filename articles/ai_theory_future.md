@@ -34,6 +34,11 @@ Three structural forces keep AI theory plural:
 
 **Outcome:** a **pluralistic ecosystem** of theories, each valid in its operating region.
 
+<figure class="article-figure">
+  <img src="{{ '/assets/images/articles/scale-regimes.svg' | relative_url }}" alt="Seven local theories drawn as horizontal bands, each spanning the range of scale over which it has bite. The bands overlap at their edges and none spans the whole axis.">
+  <figcaption>Each theory has bite over a range of scale and not far beyond it. No band spans the whole axis.</figcaption>
+</figure>
+
 ---
 
 ### 3) Analogies That Actually Map
@@ -59,6 +64,11 @@ Three structural forces keep AI theory plural:
 - **Agents**: planning priors, tool-use formalisms, self-consistency dynamics, multi-agent incentives.
 
 Each speaks a completely **different language**; together they form a growing **atlas of intelligence**.
+
+<figure class="article-figure">
+  <img src="{{ '/assets/images/articles/atlas.svg' | relative_url }}" alt="Overlapping regions, each labelled with a subfield, partially cover a dashed outline representing the space of intelligence, leaving gaps.">
+  <figcaption>Regions that touch share objects of study. No chart covers the whole space, and some of it is covered by nothing at all.</figcaption>
+</figure>
 
 ---
 

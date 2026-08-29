@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-labelledby="trajTitle trajDesc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="45 29 809 391" role="img" aria-labelledby="trajTitle trajDesc">
   <title id="trajTitle">Trajectories from s0 toward G</title>
   <desc id="trajDesc">Many trajectories leave the current state and branch. Most terminate. A few reach the goal.</desc>
   <style>.lab{fill:#22333f;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:19px;}</style>

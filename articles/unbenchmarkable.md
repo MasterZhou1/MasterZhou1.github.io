@@ -204,6 +204,11 @@ A mature benchmark evaluates what the world has already learned to see. Taste op
 
 To be unbenchmarkable is not to be impossible to evaluate forever. Many things that feel unbenchmarkable today will later be proxied, modeled, optimized, and commoditized. The excess value lies in the interval before the benchmark stabilizes, when the object, metric, and value function are still being formed.
 
+<figure class="article-figure">
+  <img src="{{ '/assets/images/articles/benchmark-frontier.svg' | relative_url }}" alt="Human premium rises while a domain is still being defined, peaks before the benchmark stabilizes, then collapses once the task becomes optimizable.">
+  <figcaption>The premium is largest while the metric is still being formed, and collapses once it settles.</figcaption>
+</figure>
+
 In this sense, taste is broader. It is judgment before the frame has settled: the ability to notice what may matter before it becomes obvious what should be measured.
 
 Good research taste notices a problem before it becomes a field. Good startup taste notices a behavior before it becomes a market. Good artistic taste notices a form before it becomes a style. Good life taste notices a path before it becomes a commodity.

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="29 20 701 326" role="img" aria-labelledby="t d">
+  <title id="t">Coarse-graining commutes with the dynamics</title>
+  <desc id="d">Many microscopic states map to one effective state. Evolving the micro state and then coarse-graining gives the same result as applying the effective law.</desc>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#22333f"/></marker></defs>
+  <style>.m{fill:#22333f;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:24px}.w{fill:#5d6f7a;font-family:Lato,sans-serif;font-size:17px}.gk{fill:#22333f;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:21px}</style>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M189.9,125.8 C189.9,209.9 200.0,209.9 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M190.9,106.6 C190.9,200.3 200.0,200.3 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M165.8,109.4 C165.8,201.7 200.0,201.7 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M238.6,122.6 C238.6,208.3 200.0,208.3 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M237.1,119.2 C237.1,206.6 200.0,206.6 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M215.8,118.4 C215.8,206.2 200.0,206.2 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M153.1,128.1 C153.1,211.1 200.0,211.1 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M219.5,125.3 C219.5,209.6 200.0,209.6 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M160.7,90.2 C160.7,192.1 200.0,192.1 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M167.7,104.0 C167.7,199.0 200.0,199.0 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M212.4,112.9 C212.4,203.5 200.0,203.5 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M219.7,99.8 C219.7,196.9 200.0,196.9 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M212.3,123.2 C212.3,208.6 200.0,208.6 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M181.2,142.7 C181.2,218.3 200.0,218.3 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M218.7,137.5 C218.7,215.8 200.0,215.8 200.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M607.3,98.1 C607.3,196.1 630.0,196.1 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M616.1,111.5 C616.1,202.7 630.0,202.7 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M654.5,119.6 C654.5,206.8 630.0,206.8 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M613.9,93.9 C613.9,193.9 630.0,193.9 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M612.6,137.9 C612.6,216.0 630.0,216.0 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M599.6,119.4 C599.6,206.7 630.0,206.7 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M643.3,86.7 C643.3,190.3 630.0,190.3 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M631.6,139.8 C631.6,216.9 630.0,216.9 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M576.4,109.0 C576.4,201.5 630.0,201.5 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M626.0,95.9 C626.0,195.0 630.0,195.0 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M649.8,112.5 C649.8,203.3 630.0,203.3 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M586.1,128.6 C586.1,211.3 630.0,211.3 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M653.4,133.4 C653.4,213.7 630.0,213.7 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M676.0,120.8 C676.0,207.4 630.0,207.4 630.0,289.0"/>
+  <path fill="none" stroke="#c3d0d8" stroke-width="1.1" d="M634.0,88.4 C634.0,191.2 630.0,191.2 630.0,289.0"/>
+  <circle cx="189.9" cy="119.8" r="3.4" fill="#9bb0bd"/>
+  <circle cx="190.9" cy="100.6" r="3.4" fill="#9bb0bd"/>
+  <circle cx="165.8" cy="103.4" r="3.4" fill="#9bb0bd"/>
+  <circle cx="238.6" cy="116.6" r="3.4" fill="#9bb0bd"/>
+  <circle cx="237.1" cy="113.2" r="3.4" fill="#9bb0bd"/>
+  <circle cx="215.8" cy="112.4" r="3.4" fill="#9bb0bd"/>
+  <circle cx="153.1" cy="122.1" r="3.4" fill="#9bb0bd"/>
+  <circle cx="219.5" cy="119.3" r="3.4" fill="#9bb0bd"/>
+  <circle cx="160.7" cy="84.2" r="3.4" fill="#9bb0bd"/>
+  <circle cx="167.7" cy="98.0" r="3.4" fill="#9bb0bd"/>
+  <circle cx="212.4" cy="106.9" r="3.4" fill="#9bb0bd"/>
+  <circle cx="219.7" cy="93.8" r="3.4" fill="#9bb0bd"/>
+  <circle cx="212.3" cy="117.2" r="3.4" fill="#9bb0bd"/>
+  <circle cx="181.2" cy="136.7" r="3.4" fill="#9bb0bd"/>
+  <circle cx="218.7" cy="131.5" r="3.4" fill="#9bb0bd"/>
+  <circle cx="607.3" cy="92.1" r="3.4" fill="#9bb0bd"/>
+  <circle cx="616.1" cy="105.5" r="3.4" fill="#9bb0bd"/>
+  <circle cx="654.5" cy="113.6" r="3.4" fill="#9bb0bd"/>
+  <circle cx="613.9" cy="87.9" r="3.4" fill="#9bb0bd"/>
+  <circle cx="612.6" cy="131.9" r="3.4" fill="#9bb0bd"/>
+  <circle cx="599.6" cy="113.4" r="3.4" fill="#9bb0bd"/>
+  <circle cx="643.3" cy="80.7" r="3.4" fill="#9bb0bd"/>
+  <circle cx="631.6" cy="133.8" r="3.4" fill="#9bb0bd"/>
+  <circle cx="576.4" cy="103.0" r="3.4" fill="#9bb0bd"/>
+  <circle cx="626.0" cy="89.9" r="3.4" fill="#9bb0bd"/>
+  <circle cx="649.8" cy="106.5" r="3.4" fill="#9bb0bd"/>
+  <circle cx="586.1" cy="122.6" r="3.4" fill="#9bb0bd"/>
+  <circle cx="653.4" cy="127.4" r="3.4" fill="#9bb0bd"/>
+  <circle cx="676.0" cy="114.8" r="3.4" fill="#9bb0bd"/>
+  <circle cx="634.0" cy="82.4" r="3.4" fill="#9bb0bd"/>
+  <path fill="none" stroke="#22333f" stroke-width="2" marker-end="url(#ah)" d="M278,108 L546,108"/>
+  <text class="w" x="415.0" y="56" text-anchor="middle">microscopic dynamics</text>
+  <path fill="none" stroke="#22333f" stroke-width="2.4" marker-end="url(#ah)" d="M220,300 L608,300"/>
+  <text class="gk" x="415.0" y="286" text-anchor="middle">F</text>
+  <text class="gk" x="126" y="210.0" text-anchor="end">&#966;</text>
+  <text class="gk" x="704" y="210.0" text-anchor="start">&#966;</text>
+  <path fill="none" stroke="#22333f" stroke-width="1.8" marker-end="url(#ah)" d="M136,154 L136,284"/>
+  <path fill="none" stroke="#22333f" stroke-width="1.8" marker-end="url(#ah)" d="M694,154 L694,284"/>
+  <circle cx="200" cy="300" r="9" fill="#2a9d8f"/>
+  <circle cx="630" cy="300" r="9" fill="#2a9d8f"/>
+  <text class="m" x="200" y="50" text-anchor="middle">x</text>
+  <text class="m" x="630" y="50" text-anchor="middle">x&#8242;</text>
+  <text class="m" x="200" y="334" text-anchor="middle">z</text>
+  <text class="m" x="630" y="334" text-anchor="middle">z&#8242;</text>
+  <text class="w" x="104" y="112" text-anchor="end">micro</text>
+  <text class="w" x="104" y="304" text-anchor="end">effective</text>
+</svg>

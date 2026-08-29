@@ -20,6 +20,11 @@ $$
 
 Here $\phi$ decides what information to keep, and $F$ describes how the retained variables behave. Historically, many of the deepest scientific breakthroughs were breakthroughs in $\phi$, not merely in $F$.
 
+<figure class="article-figure">
+  <img src="{{ '/assets/images/articles/closure.svg' | relative_url }}" alt="Many microscopic states collapse onto a single effective state. Evolving the microscopic state and then coarse-graining agrees with applying the effective law directly.">
+  <figcaption>Coarse-graining is many-to-one. A representation earns its keep only when the square closes.</figcaption>
+</figure>
+
 ---
 
 ### 1) The Newtonian Ideal: Compress the Trajectory into a Law
@@ -202,6 +207,11 @@ That is an astonishing compression:
 $$
 \text{many microscopic theories} \quad\longrightarrow\quad \text{one universality class}.
 $$
+
+<figure class="article-figure">
+  <img src="{{ '/assets/images/articles/rg-flow.svg' | relative_url }}" alt="Along most directions, unrelated theories flow inward under repeated coarse-graining and converge on one fixed point; along two relevant directions the flow runs outward.">
+  <figcaption>Unrelated theories flow to the same $\theta^\star$ along the irrelevant directions. Along the few relevant ones the flow runs outward, so criticality has to be tuned to.</figcaption>
+</figure>
 
 The renormalization-group viewpoint says something stronger than "ignore small details." It tells us that there can be a mathematical flow under which those details systematically lose predictive importance.
 

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 18 750 355" role="img" aria-labelledby="t d">
+  <title id="t">Renormalization flow near a fixed point</title>
+  <desc id="d">Along most directions, microscopically different theories flow inward under repeated coarse-graining and converge on the same fixed point. Along a few relevant directions the flow runs outward, so reaching the fixed point requires tuning.</desc>
+  <style>.m{fill:#22333f;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:24px;stroke:#fff;stroke-width:5;paint-order:stroke}.w{fill:#5d6f7a;font-family:Lato,sans-serif;font-size:17px;stroke:#fff;stroke-width:4.5;paint-order:stroke}.r{fill:#22333f;font-family:Lato,sans-serif;font-size:17px;stroke:#fff;stroke-width:4.5;paint-order:stroke}</style>
+  <path fill="none" stroke="#e76f51" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M87.3,237.7 C211.9,175.9 355.4,195.0 453.7,209.3"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#e76f51" transform="translate(249.5,196.3) rotate(-4.0)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#e76f51" transform="translate(369.0,198.7) rotate(5.3)"/>
+  <circle cx="87.3" cy="237.7" r="5.2" fill="#e76f51"/>
+  <text class="w" x="77.3" y="217.7" text-anchor="end">a magnet</text>
+  <path fill="none" stroke="#457b9d" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M135.2,137.4 C272.9,124.8 378.4,186.6 450.0,230.0"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#457b9d" transform="translate(291.6,154.0) rotate(16.9)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#457b9d" transform="translate(387.3,194.0) rotate(27.6)"/>
+  <circle cx="135.2" cy="137.4" r="5.2" fill="#457b9d"/>
+  <text class="w" x="129.2" y="161.4" text-anchor="end">a fluid</text>
+  <path fill="none" stroke="#f4a261" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M193.0,280.3 C259.3,205.3 371.9,199.7 449.4,197.0"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#f4a261" transform="translate(295.0,217.6) rotate(-17.4)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#f4a261" transform="translate(383.3,200.9) rotate(-5.5)"/>
+  <circle cx="193.0" cy="280.3" r="5.2" fill="#f4a261"/>
+  <path fill="none" stroke="#2a9d8f" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M274.0,95.8 C377.1,121.2 413.9,193.0 438.0,242.8"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#2a9d8f" transform="translate(372.8,147.3) rotate(42.6)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#2a9d8f" transform="translate(415.7,200.7) rotate(58.8)"/>
+  <circle cx="274.0" cy="95.8" r="5.2" fill="#2a9d8f"/>
+  <text class="w" x="258.0" y="81.8" text-anchor="end">a binary mixture</text>
+  <path fill="none" stroke="#e9c46a" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M274.9,352.1 C287.0,267.2 374.8,217.4 436.0,184.0"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#e9c46a" transform="translate(322.6,262.3) rotate(-45.5)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#e9c46a" transform="translate(384.6,213.7) rotate(-32.4)"/>
+  <circle cx="274.9" cy="352.1" r="5.2" fill="#e9c46a"/>
+  <path fill="none" stroke="#e09f7d" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M597.9,98.8 C567.3,181.9 468.0,217.3 399.1,240.8"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#e09f7d" transform="translate(530.3,180.9) rotate(145.1)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#e09f7d" transform="translate(457.2,219.4) rotate(157.6)"/>
+  <circle cx="597.9" cy="98.8" r="5.2" fill="#e09f7d"/>
+  <path fill="none" stroke="#f4a261" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M631.3,332.8 C508.4,315.7 441.9,240.8 397.2,188.7"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#f4a261" transform="translate(503.7,286.6) rotate(-147.8)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#f4a261" transform="translate(437.1,232.6) rotate(-134.9)"/>
+  <circle cx="631.3" cy="332.8" r="5.2" fill="#f4a261"/>
+  <path fill="none" stroke="#e9c46a" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M725.3,151.6 C623.5,226.9 484.2,227.4 388.5,226.7"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#e9c46a" transform="translate(583.2,212.3) rotate(167.9)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#e9c46a" transform="translate(470.6,225.7) rotate(177.5)"/>
+  <circle cx="725.3" cy="151.6" r="5.2" fill="#e9c46a"/>
+  <path fill="none" stroke="#2a9d8f" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M704.2,255.2 C575.8,287.0 463.7,238.8 387.3,204.6"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#2a9d8f" transform="translate(552.5,259.9) rotate(-170.4)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#2a9d8f" transform="translate(453.8,232.5) rotate(-159.4)"/>
+  <circle cx="704.2" cy="255.2" r="5.2" fill="#2a9d8f"/>
+  <path fill="none" stroke="#8ab17d" stroke-width="3" stroke-opacity="0.9" stroke-linecap="round" d="M219.7,184.9 C317.9,148.8 398.1,192.4 452.7,223.4"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#8ab17d" transform="translate(333.4,174.8) rotate(10.1)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#8ab17d" transform="translate(405.1,198.3) rotate(24.9)"/>
+  <circle cx="219.7" cy="184.9" r="5.2" fill="#8ab17d"/>
+  <path fill="none" stroke="#22333f" stroke-width="3.6" stroke-linecap="round" d="M417.4,184.1 C387.9,147.2 390.8,105.2 395.1,70.0"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#22333f" transform="translate(393.0,120.6) rotate(-94.7)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#22333f" transform="translate(394.2,77.5) rotate(-83.8)"/>
+  <path fill="none" stroke="#22333f" stroke-width="3.6" stroke-linecap="round" d="M422.6,243.9 C452.1,280.8 449.2,322.8 444.9,358.0"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#22333f" transform="translate(447.0,307.4) rotate(85.3)"/>
+  <path d="M-6.2,-4.2 L2.5,0 L-6.2,4.2 z" fill="#22333f" transform="translate(445.8,350.5) rotate(96.2)"/>
+  <circle cx="420" cy="214" r="19" fill="#ffffff"/>
+  <circle cx="420" cy="214" r="15" fill="none" stroke="#22333f" stroke-width="2.3"/>
+  <circle cx="420" cy="214" r="7" fill="#22333f"/>
+  <text class="m" x="454" y="198" text-anchor="start">&#952;<tspan font-size="15" dy="-8">&#9733;</tspan></text>
+  <text class="r" x="396" y="44" text-anchor="middle">a few relevant directions</text>
+</svg>
