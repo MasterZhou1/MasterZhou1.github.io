@@ -6,7 +6,7 @@ permalink: /articles/world-of-intention/
 
 ## Welcome to the World of Intention
 
-I increasingly believe it will become a world of **intention**.
+I increasingly believe the future will be a world of **intention**.
 
 If AI eventually becomes capable of doing almost anything that can be specified, searched, and evaluated, then execution itself becomes less scarce. The interesting question moves one level upstream:
 
