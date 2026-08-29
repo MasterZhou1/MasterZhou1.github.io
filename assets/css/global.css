@@ -18,6 +18,21 @@ h1, h2, h3, h4, h5, h6,
     color: #000;
 }
 
+/* Every card on the homepage is a peer section, so they share one size that
+   sits between the name (1.75rem) and body text (1rem). */
+.section-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+/* An inline affordance inside a heading should not inherit the heading size. */
+.section-heading-link {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 .text-profile-position {
     font-weight: 400;
 }
@@ -143,7 +158,7 @@ div.lazy {
 }
 
 /* ── Publication items ── */
-.item-container h5 {
+.item-container h3 {
     font-size: 1.05rem;
     line-height: 1.4;
     font-weight: 600;

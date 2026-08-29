@@ -29,15 +29,21 @@ title : Homepage
             {% 
                 include widgets/publication_card.html 
                 publications=pubs
-                title='<i class="fas fa-star"></i> Selected Publications'
+                title='Selected Publications'
             %}
         {% endif %}
 
-        {% include widgets/mentees_card.html %}
-
-        {% include widgets/teaching_card.html %}
-
-        {% include widgets/reviewer_card.html %}
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        {% include widgets/mentees_card.html %}
+                        {% include widgets/teaching_card.html %}
+                        {% include widgets/reviewer_card.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
