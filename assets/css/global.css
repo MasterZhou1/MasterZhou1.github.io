@@ -18,13 +18,19 @@ h1, h2, h3, h4, h5, h6,
     color: #000;
 }
 
-/* Every card on the homepage is a peer section, so they share one size that
-   sits between the name (1.75rem) and body text (1rem). */
+/* Section labels stay at body size; weight and tracking carry the hierarchy. */
 .section-heading {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
+    letter-spacing: 0.01em;
     color: #000;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.45rem;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25;
 }
 
 /* An inline affordance inside a heading should not inherit the heading size. */
@@ -141,11 +147,16 @@ div.lazy {
 }
 
 /* ── Homepage cards ── */
-.card.border-0 {
+.card.border-0,
+.home-panel {
     border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-.card-body h6 {
+.year-heading {
+    font-size: 1.15rem;
+    font-weight: 700;
     letter-spacing: 0.01em;
 }
 
@@ -158,10 +169,29 @@ div.lazy {
 }
 
 /* ── Publication items ── */
+.item-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
 .item-container h3 {
     font-size: 1.05rem;
     line-height: 1.4;
     font-weight: 600;
+}
+
+.custom-img-size {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    object-fit: contain;
+    background-color: #f8f8f8;
+}
+
+.text-container {
+    flex: 1;
 }
 
 .abstract-links a {
@@ -169,12 +199,51 @@ div.lazy {
 }
 
 /* ── Showcase cards ── */
-.grid-item .shadow-sm {
+.grid-item .card,
+.grid-item .card > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.grid-item .card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.grid-item .shadow-sm:hover {
+.showcase-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.15rem 1.2rem 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+.showcase-card:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.showcase-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 0.4rem;
+}
+.showcase-card-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #444;
+    flex: 1;
+    margin-bottom: 0.85rem;
+}
+.showcase-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    color: #777;
+}
+.grid-item .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.12);
 }
 
 /* ── Article page ── */

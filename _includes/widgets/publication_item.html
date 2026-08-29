@@ -1,24 +1,3 @@
-<style>
-  .custom-img-size {
-    width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 150px; /* Set a maximum width for the image */
-    object-fit: contain; /* Ensures the entire image is visible without cropping */
-    background-color: #f8f8f8; /* Add a background color if needed for a border-like effect */
-  }
-
-  .item-container {
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* Adds space between image and text */
-    padding: 1rem; /* Add some padding for better spacing */
-  }
-
-  .text-container {
-    flex: 1; /* Allow text container to take up available space */
-  }
-</style>
-
 {% assign item = include.item %}
 <div class="d-none d-md-block">
   <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
