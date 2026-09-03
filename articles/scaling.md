@@ -192,6 +192,23 @@ $$
 
 Ten times the compute reaches one more decade into the tail; ten times again buys another. It also puts training and inference in the same units: training lowers $D$, inference raises the frontier $\log N$. They are not the same lever, since training reshapes the distribution while inference only spends against a fixed one, but they share an axis and in some regimes one can be traded for the other.
 
+There is a deeper reason the two land in the same units. Cross-entropy training already measures surprisal: for a target trajectory $\tau=(y_1,\ldots,y_T)$,
+
+$$
+\begin{gathered}
+-\log p_\theta(\tau\mid x)\\
+=\sum_t -\log p_\theta(y_t\mid x,y_{\lt t}).
+\end{gathered}
+$$
+
+$D$ is the same coordinate, except that $p$ is the total mass on *successful* computations rather than one particular target sequence:
+
+$$
+D_\theta(x)=-\log\sum_{\tau\in\mathcal{S}_x}p_\theta(\tau\mid x),
+$$
+
+with $\mathcal{S}_x$ the set of trajectories that solve $x$. Not the same objective as ordinary supervised training, but the same surprisal geometry. Training moves mass toward useful trajectories and lowers their surprisal; inference leaves the distribution fixed and pays exponentially more samples to reach what remains surprising.
+
 So compute does not make every problem easier. It moves a frontier: tasks with $p\gg 1/N$ are reachable, tasks with $p\ll 1/N$ stay invisible.
 
 <figure class="article-figure">
@@ -383,7 +400,7 @@ This is why I would hesitate to call the current loop open-ended recursive self-
 
 ### 11) It Just Works
 
-In the simple picture above, everything collapses into one inequality. Write $D_\theta(x)=-\log p_\theta(x)$, where $p_\theta(x)$ is the model's single-attempt success probability on task $x$. That task becomes practically reachable when its difficulty falls under both ceilings at once:
+In the simple picture above, everything collapses into one inequality. With $D_\theta(x)=-\log p_\theta(x)$ as above, $p_\theta(x)$ being the model's single-attempt success probability on task $x$, that task becomes practically reachable when its difficulty falls under both ceilings at once:
 
 $$
 \boxed{
@@ -397,7 +414,7 @@ $$
 }
 $$
 
-The three roles from the beginning now sit on the same reachability axis. Training lowers $D_\theta(x)$ by making success less surprising; inference raises $\log N$, paying for reach; verification sets $\log(1/\epsilon)$, the depth at which that reach can still be trusted. Because the right side is a minimum, the weakest of the three decides everything. A closed loop is the case where the left side falls while the system works, and successful search becomes training data that lowers it again next round.
+The three roles from the beginning now sit on the same reachability axis. Cross-entropy training, inference scaling and verification look like different parts of the stack, but in this picture they trade in the same currency: surprisal. Training lowers $D_\theta(x)$ by making success less surprising; inference raises $\log N$, paying for reach; verification sets $\log(1/\epsilon)$, the depth at which that reach can still be trusted. Because the right side is a minimum, the weakest of the three decides everything. A closed loop is the case where the left side falls while the system works, and successful search becomes training data that lowers it again next round.
 
 When I first used ChatGPT I had no theory for why it felt different, only the intuition that it was not ordinary autocomplete. That reaction has not worn off. What changed is that I now have some idea what I was reacting to — and what surprises me is how little exotic machinery it takes.
 
