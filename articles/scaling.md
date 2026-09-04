@@ -36,9 +36,9 @@ A larger model does store more of what it read. But storage is not the whole of 
 
 The pieces come from the data; the arrangement usually does not. A model can be asked something that appeared nowhere in its corpus and still assemble an answer from fragments that did — a definition from one place, a proof technique from another, a habit of checking edge cases from a third. The number of possible arrangements grows exponentially in the number of pieces, so that space dwarfs anything ever written down.
 
-That makes "was it in the training data?" the wrong question to ask. Many of the most interesting outputs are not present verbatim. What matters is whether the answer lies inside the space the model can *compose*, and language is wide enough that this space appears to hold much of what we call reasoning. It also changes what a prompt is. A prompt is not only a container for information — it also selects a region of the model's compositional space and asks for a sample.
+That makes "was it in the training data?" the wrong question to ask. Many of the most interesting outputs are not present verbatim. What matters is whether the answer lies inside the space the model can *compose*, and language is wide enough that this space appears to hold much of what we call reasoning. It also changes what a prompt is. A prompt is not only a container for information — it also selects a region of the model's compositional space and asks for a sample. Pretraining learns a vast conditional repertoire of possible continuations and computations; a prompt conditions that repertoire, changing which trajectories carry meaningful probability mass. It is information and control at once: it can supply genuinely new evidence — a document, an example, an observation, a tool's output — while making some latent computations far more reachable than others.
 
-What we are left with is a **prior** over what a reasonable next step looks like in a context nobody enumerated. Test-time scaling is what happens when you sample from it seriously.
+What we are left with is a **prior**, conditioned by the prompt, over what a reasonable next step looks like in a context nobody enumerated. Test-time scaling is what happens when you sample from it seriously.
 
 ---
 
