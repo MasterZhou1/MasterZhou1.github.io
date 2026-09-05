@@ -337,7 +337,15 @@ The idealization also assumes a *sound* checker, one that never accepts a wrong 
 
 ### 9) Why Long-Horizon AI Does Not Immediately Collapse
 
-A verifier can do more than choose among finished samples. Put its feedback inside the loop, and it changes what gets sampled next.
+A verifier can do more than choose among finished samples. Generation produces uncertainty over possible trajectories; verification turns an outcome into information. Feed that information back into the context and the next distribution is no longer the one you started with:
+
+$$
+p_\theta(a_{t+1}\mid h_t)
+\;\longrightarrow\;
+p_\theta(a_{t+1}\mid h_t,v_t),
+$$
+
+with $v_t$ whatever the verifier or the environment returned. Selection acts on a distribution after the fact; feedback acts on the next one. Generation creates possibilities, verification makes them informative, and feedback spends that information on what gets generated next — which is how a closed loop can reduce the difficulty of the search that remains instead of only paying for more of it.
 
 An old intuition seems to contradict all of this. If each reasoning step is correct with probability $q$, then over a chain of length $L$,
 
@@ -368,6 +376,21 @@ D_0>D_1>D_2>\cdots
 $$
 
 That is the real difference between an agent and a large batch of samples, and why one with a working feedback channel can beat best-of-$N$ at equal token cost. It is not merely buying more search capacity; it is spending compute to reduce the search required.
+
+The same two coordinates say something about multi-agent systems, which are the obvious way to spend a large budget. More agents are not automatically more useful compute; what matters is which term the orchestration actually moves.
+
+$$
+\begin{array}{ll}
+\text{independent proposals} & N_{\text{eff}}\uparrow\\
+\text{informative feedback} & D\downarrow\\
+\text{correlated imitation} & N_{\text{eff}}\downarrow\\
+\text{misleading feedback} & D\uparrow
+\end{array}
+$$
+
+Parallel agents help when they genuinely explore different hypotheses, and specialized ones when they contribute computation or evidence the rest do not have; a test, a tool or an environment helps because it returns something no agent already contained. Free-form discussion is the case to watch. Agents sharing one model prior begin conditioning on each other's mistakes and converge on a common answer, so the disagreement that made the ensemble worth running disappears while the uncertainty about the truth stays exactly where it was.
+
+> **A good multi-agent system converts parallel uncertainty into information. A bad one converts independent errors into correlated confidence.**
 
 ---
 
