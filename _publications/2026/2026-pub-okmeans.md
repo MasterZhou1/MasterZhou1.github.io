@@ -1,8 +1,8 @@
 ---
 title:          "Simple KNN-Based Outlier Detection Achieves Robust Clustering"
-date:           2026-05-10 00:01:00 +0800
+date:           2026-09-24 00:01:00 +0800
 selected:       false
-pub:            "arXiv"
+pub:            "NeurIPS"
 pub_date:       "2026"
 
 abstract: >-
@@ -14,11 +14,12 @@ authors:
   - Yufa Zhou
 
 bib: |
-  @article{jiang2026simple,
+  @inproceedings{jiang2026simple,
     title={Simple KNN-Based Outlier Detection Achieves Robust Clustering},
     author={Jiang, Tianle and Zhou, Yufa},
-    journal={arXiv preprint arXiv:2605.07130},
-    year={2026}
+    booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
+    year={2026},
+    url={https://openreview.net/forum?id=rGWj7JwpMU}
   }
 
 links:
