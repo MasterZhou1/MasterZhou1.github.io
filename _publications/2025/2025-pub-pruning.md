@@ -30,7 +30,7 @@ authors:
   
 bib: |
   @inproceedings{shen2025numerical,
-  title={Numerical pruning for efficient autoregressive models},
+  title={Numerical Pruning for Efficient Autoregressive Models},
   author={Shen, Xuan and Song, Zhao and Zhou, Yufa and Chen, Bo and Liu, Jing and Zhang, Ruiyi and Rossi, Ryan A and Tan, Hao and Yu, Tong and Chen, Xiang and others},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   volume={39},

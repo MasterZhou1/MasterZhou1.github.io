@@ -1,5 +1,5 @@
 ---
-title:          "Looped relu mlps may be all you need as practical programmable computers"
+title:          "Looped ReLU MLPs May Be All You Need as Practical Programmable Computers"
 date:           2025-1-22 00:01:00 +0800
 selected:       false
 pub:            "AISTATS"

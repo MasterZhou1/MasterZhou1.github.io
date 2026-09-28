@@ -2,7 +2,7 @@
 title:          "Why Do Transformers Fail to Forecast Time Series In-Context?"
 date:           2025-10-13 00:01:00 +0800
 selected:       true
-pub:            "NeurIPS 2025 Workshop: What Can('t) Transformers Do? "
+pub:            "NeurIPS 2025 Workshop: What Can('t) Transformers Do?"
 pub_last:       '<span class="badge badge-pill badge-publication badge-success">Oral (3/68 ≈ 4.4%)</span>'
 # pub_date:       "2025"
 

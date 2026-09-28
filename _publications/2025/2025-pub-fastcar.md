@@ -23,17 +23,17 @@ authors:
   - Quanyi Wang
   - Henghui Ding
   - Yiwei Wang
-  - Yanzhi Wang
   - Pu Zhao
   - Jun Lin
   - Jiuxiang Gu
 
 bib: |
-  @article{shen2025fastcar,
-  title={Fastcar: Cache attentive replay for fast auto-regressive video generation on the edge},
-  author={Shen, Xuan and Ma, Weize and Zhou, Yufa and Tang, Enhao and Xie, Yanyue and Li, Zhengang and Gong, Yifan and Wang, Quanyi and Ding, Henghui and Wang, Yiwei and others},
-  journal={arXiv preprint arXiv:2505.14709},
-  year={2025}
+  @inproceedings{shen2026fastcar,
+    title={FastCar: Cache Attentive Replay for Fast Auto-Regressive Video Generation on the Edge},
+    author={Shen, Xuan and Ma, Weize and Zhou, Yufa and Tang, Enhao and Xie, Yanyue and Li, Zhengang and Gong, Yifan and Wang, Quanyi and Ding, Henghui and Wang, Yiwei and Zhao, Pu and Lin, Jun and Gu, Jiuxiang},
+    booktitle={The Fourteenth International Conference on Learning Representations},
+    year={2026},
+    url={https://openreview.net/forum?id=9f3Nukn6BA}
   }
 
 links:
