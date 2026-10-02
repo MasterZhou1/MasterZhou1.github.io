@@ -38,6 +38,13 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    // Card heights change once web fonts load.
+    if (document.fonts) {
+        document.fonts.ready.then(function () {
+            $grid.masonry('layout');
+        });
+    }
 })
 
 // BibTeX Modal Functions
