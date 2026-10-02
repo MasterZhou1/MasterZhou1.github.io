@@ -1,7 +1,7 @@
 ---
 title:          "Beyond Linear Approximations: A Novel Pruning Approach for Attention Matrix"
 date:           2025-1-22 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "ICLR"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
