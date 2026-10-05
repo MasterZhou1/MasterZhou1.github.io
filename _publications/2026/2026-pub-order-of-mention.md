@@ -2,7 +2,7 @@
 title:          "The Geometry of Contextual Relations: Language Models Address Facts by Order of Mention"
 date:           2026-10-01 00:01:00 +0800
 selected:       true
-pub:            "arXiv preprint"
+pub:            "arXiv"
 pub_date:       "2026"
 
 abstract: >-
@@ -14,10 +14,10 @@ authors:
 
 bib: |
   @article{zhou2026geometry,
-  title   = {The Geometry of Contextual Relations: Language Models Address Facts by Order of Mention},
-  author  = {Zhou, Yufa},
-  journal = {arXiv preprint arXiv:2610.00910},
-  year    = {2026}
+    title={The Geometry of Contextual Relations: Language Models Address Facts by Order of Mention},
+    author={Zhou, Yufa},
+    journal={arXiv preprint arXiv:2610.00910},
+    year={2026}
   }
 
 links:

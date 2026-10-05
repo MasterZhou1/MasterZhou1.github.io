@@ -27,9 +27,9 @@ bib: |
   @inproceedings{wen2025efficient,
     title={Efficient Multi-modal Large Language Models via Progressive Consistency Distillation},
     author={Wen, Zichen and Wang, Shaobo and Zhou, Yufa and Zhang, Junyuan and Zhang, Qintong and Gao, Yifeng and Chen, Zhaorun and Wang, Bin and Li, Weijia and He, Conghui and Zhang, Linfeng},
-  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
-  year={2025},
-  url={https://openreview.net/forum?id=gZjPllL9jM}
+    booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+    year={2025},
+    url={https://openreview.net/forum?id=gZjPllL9jM}
   }
 
 links:

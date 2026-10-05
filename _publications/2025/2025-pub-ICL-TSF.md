@@ -18,13 +18,11 @@ authors:
 
 bib: |
   @article{zhou2025tsf,
-  title={Why Do Transformers Fail to Forecast Time Series In-Context?},
-  author={Zhou, Yufa and Wang, Yixiao and Goel, Surbhi and Zhang, Anru R.},
-  journal={arXiv preprint arXiv:2510.09776},
-  year={2025}
+    title={Why Do Transformers Fail to Forecast Time Series In-Context?},
+    author={Zhou, Yufa and Wang, Yixiao and Goel, Surbhi and Zhang, Anru R.},
+    journal={arXiv preprint arXiv:2510.09776},
+    year={2025}
   }
-
-
 
 links:
   Paper: https://arxiv.org/abs/2510.09776

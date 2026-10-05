@@ -31,7 +31,7 @@ authors:
 bib: |
   @inproceedings{shen2025lazydit,
   title={LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers},
-  author={Shen, Xuan and Song, Zhao and Zhou, Yufa and Chen, Bo and Li, Yanyu and Gong, Yifan and Zhang, Kai and Tan, Hao and Kuen, Jason and Ding, Henghui and others},
+  author={Shen, Xuan and Song, Zhao and Zhou, Yufa and Chen, Bo and Li, Yanyu and Gong, Yifan and Zhang, Kai and Tan, Hao and Kuen, Jason and Ding, Henghui and Shu, Zhihao and Niu, Wei and Zhao, Pu and Wang, Yanzhi and Gu, Jiuxiang},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   volume={39},
   number={19},

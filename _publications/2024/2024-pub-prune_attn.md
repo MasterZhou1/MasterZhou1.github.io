@@ -21,7 +21,7 @@ authors:
 bib: |
   @inproceedings{liang2025beyond,
   title={Beyond Linear Approximations: A Novel Pruning Approach for Attention Matrix},
-  author={Yingyu Liang and Jiangxuan Long and Zhenmei Shi and Zhao Song and Yufa Zhou},
+  author={Liang, Yingyu and Long, Jiangxuan and Shi, Zhenmei and Song, Zhao and Zhou, Yufa},
   booktitle={The Thirteenth International Conference on Learning Representations},
   year={2025},
   url={https://openreview.net/forum?id=sgbI8Pxwie}
