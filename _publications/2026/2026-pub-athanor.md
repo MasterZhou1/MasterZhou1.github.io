@@ -6,7 +6,7 @@ pub:            "arXiv"
 pub_date:       "2026"
 
 abstract: >-
-  We build Athanor, an agent-native system where frontier agents make every research decision while the environment handles execution, sealed evaluation, and the research record, and show that a team of four agents, with no teacher model or human advice, autonomously post-trains Qwen3-4B-Base in 104 hours to match the official instruct model on both a development suite and a held-out suite the agents never see.
+  We build Athanor, an agent-native system for post-training research, and show that a team of four frontier agents, with no teacher model or human advice, autonomously post-trains Qwen3-4B-Base to match the official instruct model, including on a held-out suite the agents never see.
 
 cover:          /assets/images/covers/athanor.png
 authors:
