@@ -6,7 +6,7 @@ pub:            "arXiv"
 pub_date:       "2026"
 
 abstract: >-
-  A team of four frontier agents, given full research autonomy and no teacher model, post-trains Qwen3-4B-Base to the level of the official instruct release in 104 hours: 15.9 to 67.3 on a six-task development suite and 9.2 to 48.2 on a held-out suite the agents never see, against 66.5 and 47.9 for Qwen3-4B-Instruct-2507. Athanor handles execution, frozen evaluation, and the research record, so the agents keep every research decision.
+  We build Athanor, an agent-native system where frontier agents make every research decision while the environment handles execution, sealed evaluation, and the research record, and show that a team of four agents, with no teacher model or human advice, autonomously post-trains Qwen3-4B-Base in 104 hours to match the official instruct model on both a development suite and a held-out suite the agents never see.
 
 cover:          /assets/images/covers/athanor.png
 authors:
