@@ -29,4 +29,5 @@ bib: |
 
 links:
   Paper: https://arxiv.org/abs/2610.21055
+  Slides: /assets/slides/Athanor_Talk.html
 ---
