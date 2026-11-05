@@ -8,6 +8,7 @@ pub_date:       "2026"
 abstract: >-
   We split the training-inference mismatch in LLM reinforcement learning exactly into a near-constant numerical discrepancy and a self-reinforcing policy lag, and derive the discrepancy-lag correction (DLC), which centers the former, clips the latter, and resynchronizes the sampler when the effective sample size of the lag ratio falls below one half.
 
+cover:          /assets/images/covers/mismatch.png
 authors:
   - Yu Li*
   - Yufa Zhou*
