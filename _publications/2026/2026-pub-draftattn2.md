@@ -8,6 +8,7 @@ pub_date:       "2026"
 abstract: >-
   We present DraftAttention2, a training-free method that uses a low-resolution draft attention map to sparsify attention blocks and assign mixed precision, improving the quality-efficiency trade-off for video diffusion, especially in the few-step setting.
 
+cover:          /assets/images/covers/draftattn2.png
 authors:
   - Rui Ding
   - Haopeng Li
